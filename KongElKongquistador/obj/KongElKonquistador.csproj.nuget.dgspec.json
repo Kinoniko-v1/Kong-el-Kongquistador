@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\KongElKongquistador\\KongElKonquistador.csproj": {}
+    "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\KongElKongquistador\\KongElKonquistador.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\KongElKongquistador\\KongElKonquistador.csproj": {
+    "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\KongElKongquistador\\KongElKonquistador.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\KongElKongquistador\\KongElKonquistador.csproj",
+        "projectUniqueName": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\KongElKongquistador\\KongElKonquistador.csproj",
         "projectName": "KongElKonquistador",
-        "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\KongElKongquistador\\KongElKonquistador.csproj",
-        "packagesPath": "C:\\Users\\Kinoniko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\KongElKongquistador\\obj\\",
+        "projectPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\KongElKongquistador\\KongElKonquistador.csproj",
+        "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\KongElKongquistador\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kinoniko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,17 +32,17 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego1\\Minijuego1.csproj": {
-                "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego1\\Minijuego1.csproj"
+              "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego1\\Minijuego1.csproj": {
+                "projectPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego1\\Minijuego1.csproj"
               },
-              "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego2\\Minijuego2.csproj": {
-                "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego2\\Minijuego2.csproj"
+              "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego2\\Minijuego2.csproj": {
+                "projectPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego2\\Minijuego2.csproj"
               },
-              "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego3\\Minijuego3.csproj": {
-                "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego3\\Minijuego3.csproj"
+              "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego3\\Minijuego3.csproj": {
+                "projectPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego3\\Minijuego3.csproj"
               },
-              "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj": {
-                "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj"
+              "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj": {
+                "projectPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj"
               }
             }
           }
@@ -71,24 +71,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego1\\Minijuego1.csproj": {
+    "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego1\\Minijuego1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego1\\Minijuego1.csproj",
+        "projectUniqueName": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego1\\Minijuego1.csproj",
         "projectName": "Minijuego1",
-        "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego1\\Minijuego1.csproj",
-        "packagesPath": "C:\\Users\\Kinoniko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego1\\obj\\",
+        "projectPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego1\\Minijuego1.csproj",
+        "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kinoniko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -103,8 +103,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj": {
-                "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj"
+              "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj": {
+                "projectPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj"
               }
             }
           }
@@ -133,24 +133,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego2\\Minijuego2.csproj": {
+    "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego2\\Minijuego2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego2\\Minijuego2.csproj",
+        "projectUniqueName": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego2\\Minijuego2.csproj",
         "projectName": "Minijuego2",
-        "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego2\\Minijuego2.csproj",
-        "packagesPath": "C:\\Users\\Kinoniko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego2\\obj\\",
+        "projectPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego2\\Minijuego2.csproj",
+        "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kinoniko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -165,8 +165,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj": {
-                "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj"
+              "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj": {
+                "projectPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj"
               }
             }
           }
@@ -195,24 +195,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego3\\Minijuego3.csproj": {
+    "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego3\\Minijuego3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego3\\Minijuego3.csproj",
+        "projectUniqueName": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego3\\Minijuego3.csproj",
         "projectName": "Minijuego3",
-        "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego3\\Minijuego3.csproj",
-        "packagesPath": "C:\\Users\\Kinoniko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego3\\obj\\",
+        "projectPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego3\\Minijuego3.csproj",
+        "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Minijuego3\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kinoniko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -227,8 +227,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj": {
-                "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj"
+              "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj": {
+                "projectPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj"
               }
             }
           }
@@ -257,24 +257,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj": {
+    "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj",
+        "projectUniqueName": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj",
         "projectName": "Utilidades",
-        "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj",
-        "packagesPath": "C:\\Users\\Kinoniko\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\obj\\",
+        "projectPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj",
+        "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\omarm\\Desktop\\Kong-el-Kongquistador\\Utilidades\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Kinoniko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -315,7 +315,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
         }
       }
     }
