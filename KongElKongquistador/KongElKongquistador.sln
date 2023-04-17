@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KongElKonquistador", "KongElKonquistador.csproj", "{12F866B5-5839-483A-B7BD-FF0D51A1B4DD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minijuego3", "..\Minijuego3\Minijuego3.csproj", "{78A2D411-F6AD-4D19-8688-1CB2D5DAB7CA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Utilidades", "..\Utilidades\Utilidades.csproj", "{2AE3D39F-2E71-49E6-9801-3EE800A8E938}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minijuego1", "..\Minijuego1\Minijuego1.csproj", "{588F6DF7-F5DF-4973-8462-E67CA1FFD15B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Minijuego2", "..\Minijuego2\Minijuego2.csproj", "{ED40A30E-CD83-40DE-83D6-B91B83291B19}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Minijuegos", "Minijuegos", "{8BA74AAB-9B43-4464-B1C5-545A26CB2DD1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Comunes", "Comunes", "{7E64DEBD-387D-44D7-96BD-1CBA76AB02C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Principal", "Principal", "{A9C4213E-EE4E-41B4-A57B-E9F8C1D07670}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12F866B5-5839-483A-B7BD-FF0D51A1B4DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F866B5-5839-483A-B7BD-FF0D51A1B4DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F866B5-5839-483A-B7BD-FF0D51A1B4DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F866B5-5839-483A-B7BD-FF0D51A1B4DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78A2D411-F6AD-4D19-8688-1CB2D5DAB7CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78A2D411-F6AD-4D19-8688-1CB2D5DAB7CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78A2D411-F6AD-4D19-8688-1CB2D5DAB7CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78A2D411-F6AD-4D19-8688-1CB2D5DAB7CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE3D39F-2E71-49E6-9801-3EE800A8E938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE3D39F-2E71-49E6-9801-3EE800A8E938}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE3D39F-2E71-49E6-9801-3EE800A8E938}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE3D39F-2E71-49E6-9801-3EE800A8E938}.Release|Any CPU.Build.0 = Release|Any CPU
+		{588F6DF7-F5DF-4973-8462-E67CA1FFD15B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{588F6DF7-F5DF-4973-8462-E67CA1FFD15B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{588F6DF7-F5DF-4973-8462-E67CA1FFD15B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{588F6DF7-F5DF-4973-8462-E67CA1FFD15B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED40A30E-CD83-40DE-83D6-B91B83291B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED40A30E-CD83-40DE-83D6-B91B83291B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED40A30E-CD83-40DE-83D6-B91B83291B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED40A30E-CD83-40DE-83D6-B91B83291B19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12F866B5-5839-483A-B7BD-FF0D51A1B4DD} = {A9C4213E-EE4E-41B4-A57B-E9F8C1D07670}
+		{78A2D411-F6AD-4D19-8688-1CB2D5DAB7CA} = {8BA74AAB-9B43-4464-B1C5-545A26CB2DD1}
+		{2AE3D39F-2E71-49E6-9801-3EE800A8E938} = {7E64DEBD-387D-44D7-96BD-1CBA76AB02C3}
+		{588F6DF7-F5DF-4973-8462-E67CA1FFD15B} = {8BA74AAB-9B43-4464-B1C5-545A26CB2DD1}
+		{ED40A30E-CD83-40DE-83D6-B91B83291B19} = {8BA74AAB-9B43-4464-B1C5-545A26CB2DD1}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0DCBB94C-2A98-4976-A196-FB085ACA7556}
+	EndGlobalSection
+EndGlobal

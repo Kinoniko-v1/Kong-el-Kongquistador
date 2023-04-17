@@ -1,0 +1,26 @@
+C:\Users\Kinoniko\source\repos\Minijuego1\bin\Debug\netcoreapp3.1\Minijuego1.deps.json
+C:\Users\Kinoniko\source\repos\Minijuego1\bin\Debug\netcoreapp3.1\Minijuego1.dll
+C:\Users\Kinoniko\source\repos\Minijuego1\bin\Debug\netcoreapp3.1\Minijuego1.pdb
+C:\Users\Kinoniko\source\repos\Minijuego1\bin\Debug\netcoreapp3.1\Utilidades.dll
+C:\Users\Kinoniko\source\repos\Minijuego1\bin\Debug\netcoreapp3.1\Utilidades.pdb
+C:\Users\Kinoniko\source\repos\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.csproj.AssemblyReference.cache
+C:\Users\Kinoniko\source\repos\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kinoniko\source\repos\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.AssemblyInfoInputs.cache
+C:\Users\Kinoniko\source\repos\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.AssemblyInfo.cs
+C:\Users\Kinoniko\source\repos\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.csproj.CoreCompileInputs.cache
+C:\Users\Kinoniko\source\repos\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.csproj.CopyComplete
+C:\Users\Kinoniko\source\repos\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.dll
+C:\Users\Kinoniko\source\repos\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.pdb
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\bin\Debug\netcoreapp3.1\Minijuego1.deps.json
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\bin\Debug\netcoreapp3.1\Minijuego1.dll
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\bin\Debug\netcoreapp3.1\Minijuego1.pdb
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\bin\Debug\netcoreapp3.1\Utilidades.dll
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\bin\Debug\netcoreapp3.1\Utilidades.pdb
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.csproj.AssemblyReference.cache
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.AssemblyInfoInputs.cache
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.AssemblyInfo.cs
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.csproj.CoreCompileInputs.cache
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.csproj.CopyComplete
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.dll
+C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego1\obj\Debug\netcoreapp3.1\Minijuego1.pdb

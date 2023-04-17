@@ -1,0 +1,161 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Minijuego1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Utilidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Minijuego1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Minijuego1.dll": {}
+        }
+      },
+      "Minijuego2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Utilidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Minijuego2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Minijuego2.dll": {}
+        }
+      },
+      "Minijuego3/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Utilidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Minijuego3.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Minijuego3.dll": {}
+        }
+      },
+      "Utilidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Utilidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Utilidades.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Minijuego1/1.0.0": {
+      "type": "project",
+      "path": "../Minijuego1/Minijuego1.csproj",
+      "msbuildProject": "../Minijuego1/Minijuego1.csproj"
+    },
+    "Minijuego2/1.0.0": {
+      "type": "project",
+      "path": "../Minijuego2/Minijuego2.csproj",
+      "msbuildProject": "../Minijuego2/Minijuego2.csproj"
+    },
+    "Minijuego3/1.0.0": {
+      "type": "project",
+      "path": "../Minijuego3/Minijuego3.csproj",
+      "msbuildProject": "../Minijuego3/Minijuego3.csproj"
+    },
+    "Utilidades/1.0.0": {
+      "type": "project",
+      "path": "../Utilidades/Utilidades.csproj",
+      "msbuildProject": "../Utilidades/Utilidades.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Minijuego1 >= 1.0.0",
+      "Minijuego2 >= 1.0.0",
+      "Minijuego3 >= 1.0.0",
+      "Utilidades >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Kinoniko\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\KongElKongquistador\\KongElKonquistador.csproj",
+      "projectName": "KongElKonquistador",
+      "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\KongElKongquistador\\KongElKonquistador.csproj",
+      "packagesPath": "C:\\Users\\Kinoniko\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\KongElKongquistador\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Kinoniko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego1\\Minijuego1.csproj": {
+              "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego1\\Minijuego1.csproj"
+            },
+            "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego2\\Minijuego2.csproj": {
+              "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego2\\Minijuego2.csproj"
+            },
+            "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego3\\Minijuego3.csproj": {
+              "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego3\\Minijuego3.csproj"
+            },
+            "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj": {
+              "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "GJN3 Diseño/1.0.0": {
+        "dependencies": {
+          "Minijuego1": "1.0.0",
+          "Minijuego2": "1.0.0",
+          "Minijuego3": "1.0.0",
+          "Utilidades": "1.0.0"
+        },
+        "runtime": {
+          "GJN3 Diseño.dll": {}
+        }
+      },
+      "Minijuego1/1.0.0": {
+        "dependencies": {
+          "Utilidades": "1.0.0"
+        },
+        "runtime": {
+          "Minijuego1.dll": {}
+        }
+      },
+      "Minijuego2/1.0.0": {
+        "dependencies": {
+          "Utilidades": "1.0.0"
+        },
+        "runtime": {
+          "Minijuego2.dll": {}
+        }
+      },
+      "Minijuego3/1.0.0": {
+        "dependencies": {
+          "Utilidades": "1.0.0"
+        },
+        "runtime": {
+          "Minijuego3.dll": {}
+        }
+      },
+      "Utilidades/1.0.0": {
+        "runtime": {
+          "Utilidades.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "GJN3 Diseño/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Minijuego1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Minijuego2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Minijuego3/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utilidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

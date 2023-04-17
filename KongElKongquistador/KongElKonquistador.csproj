@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>GJN3_Diseño</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Minijuego1\Minijuego1.csproj" />
+    <ProjectReference Include="..\Minijuego2\Minijuego2.csproj" />
+    <ProjectReference Include="..\Minijuego3\Minijuego3.csproj" />
+    <ProjectReference Include="..\Utilidades\Utilidades.csproj" />
+  </ItemGroup>
+
+</Project>

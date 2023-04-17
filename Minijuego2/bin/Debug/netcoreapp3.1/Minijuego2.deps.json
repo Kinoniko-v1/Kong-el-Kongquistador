@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Minijuego2/1.0.0": {
+        "dependencies": {
+          "Utilidades": "1.0.0"
+        },
+        "runtime": {
+          "Minijuego2.dll": {}
+        }
+      },
+      "Utilidades/1.0.0": {
+        "runtime": {
+          "Utilidades.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Minijuego2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Utilidades/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
