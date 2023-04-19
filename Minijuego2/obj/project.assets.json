@@ -33,11 +33,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego2\\Minijuego2.csproj",
+      "projectUniqueName": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego2\\Minijuego2.csproj",
       "projectName": "Minijuego2",
-      "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego2\\Minijuego2.csproj",
+      "projectPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego2\\Minijuego2.csproj",
       "packagesPath": "C:\\Users\\Kinoniko\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Minijuego2\\obj\\",
+      "outputPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -58,8 +58,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj": {
-              "projectPath": "C:\\Users\\Kinoniko\\Desktop\\Quark GameJam 3\\Utilidades\\Utilidades.csproj"
+            "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\Utilidades.csproj": {
+              "projectPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\Utilidades.csproj"
             }
           }
         }

@@ -64,7 +64,7 @@ namespace GJN3_Diseño
         {
             EstadoDeJuego estadoAnt;
             if (estado != 0)
-                estadoAnt = (EstadoDeJuego)estado - 1;
+                estadoAnt = estado - 1;
             else estadoAnt = estado;
             Escritor.EscribirDer("Juego: " + estadoAnt +" - Finalizado.");
         }
