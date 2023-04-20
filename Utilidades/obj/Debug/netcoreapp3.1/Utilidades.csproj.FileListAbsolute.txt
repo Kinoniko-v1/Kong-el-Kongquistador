@@ -18,3 +18,13 @@ C:\Users\Kinoniko\Desktop\Quark GameJam 3\Utilidades\obj\Debug\netcoreapp3.1\Uti
 C:\Users\Kinoniko\Desktop\Quark GameJam 3\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.csproj.CoreCompileInputs.cache
 C:\Users\Kinoniko\Desktop\Quark GameJam 3\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.dll
 C:\Users\Kinoniko\Desktop\Quark GameJam 3\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.pdb
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Utilidades\bin\Debug\netcoreapp3.1\Utilidades.deps.json
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Utilidades\bin\Debug\netcoreapp3.1\Utilidades.dll
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Utilidades\bin\Debug\netcoreapp3.1\Utilidades.pdb
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.csproj.AssemblyReference.cache
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.AssemblyInfoInputs.cache
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.AssemblyInfo.cs
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.csproj.CoreCompileInputs.cache
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.dll
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.pdb

@@ -24,3 +24,16 @@ C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego3\obj\Debug\netcoreapp3.1\Min
 C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego3\obj\Debug\netcoreapp3.1\Minijuego3.csproj.CopyComplete
 C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego3\obj\Debug\netcoreapp3.1\Minijuego3.dll
 C:\Users\Kinoniko\Desktop\Quark GameJam 3\Minijuego3\obj\Debug\netcoreapp3.1\Minijuego3.pdb
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\bin\Debug\netcoreapp3.1\Minijuego3.deps.json
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\bin\Debug\netcoreapp3.1\Minijuego3.dll
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\bin\Debug\netcoreapp3.1\Minijuego3.pdb
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\bin\Debug\netcoreapp3.1\Utilidades.dll
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\bin\Debug\netcoreapp3.1\Utilidades.pdb
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\obj\Debug\netcoreapp3.1\Minijuego3.csproj.AssemblyReference.cache
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\obj\Debug\netcoreapp3.1\Minijuego3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\obj\Debug\netcoreapp3.1\Minijuego3.AssemblyInfoInputs.cache
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\obj\Debug\netcoreapp3.1\Minijuego3.AssemblyInfo.cs
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\obj\Debug\netcoreapp3.1\Minijuego3.csproj.CoreCompileInputs.cache
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\obj\Debug\netcoreapp3.1\Minijuego3.csproj.CopyComplete
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\obj\Debug\netcoreapp3.1\Minijuego3.dll
+C:\Users\omarm\Desktop\Kong-el-Kongquistador\Minijuego3\obj\Debug\netcoreapp3.1\Minijuego3.pdb
