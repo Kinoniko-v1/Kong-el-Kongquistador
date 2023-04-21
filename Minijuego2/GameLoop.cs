@@ -4,7 +4,7 @@ using System.Threading;
 
 namespace JuegoRetro
 {
-    public class Program
+    public static class GameLoop
     {
         static int jugadorPosX = 1;
         static int jugadorPosY = 1;
@@ -13,39 +13,46 @@ namespace JuegoRetro
         static int enemigoPosY = 6;
 
         static int mapaNumero = 0;
-
-        static bool perdiste = false;
-        static void Main()
+        public static void IniciarGameLoop()
         {
             
             char[,] mapaActual = Laberinto.DevolverLaberinto(mapaNumero);
-            int cantPuntos;
+            bool alcanzado;
 
-            ConsoleKeyInfo tecla;
+            ConsoleKeyInfo tecla = new ConsoleKeyInfo();
             do
             {
                 Console.Clear();
-                DibujarLaberinto(mapaActual);
+                if (mapaNumero > 2) break;
 
-                //puntos restantes:
-                cantPuntos = CantidadDePuntos(mapaActual);
-                Console.WriteLine($"Mapa N°: {mapaNumero + 1}");
-                Console.WriteLine($"Cantidad de puntos restantes: {cantPuntos}");
-                if (cantPuntos <= 1)
-                {
-                    DibujarPuerta();
-                }
+                DibujarLaberinto(mapaActual);
+                ImprimirPuntos(mapaActual);
 
                 DibujarJugador();
                 DibujarEnemigo();
 
-                tecla = Console.ReadKey();
-                MoverJugador(tecla.Key, ref mapaActual);
-                MoverEnemigo(ref mapaActual);
-            } while (tecla.Key != ConsoleKey.Escape && !TeAlzanzoElEnemigo());
+                alcanzado = TeAlcanzoElEnemigo();
+                if (!alcanzado)
+                {
+                    tecla = Console.ReadKey();
+                    MoverJugador(tecla.Key, ref mapaActual);
+                    MoverEnemigo(ref mapaActual);
+                }
+            } while (tecla.Key != ConsoleKey.Escape && !alcanzado);
         }
 
-        private static bool TeAlzanzoElEnemigo()
+        static void ImprimirPuntos(char[,] mapaActual)
+        {
+            //puntos restantes:
+            int cantPuntos = CantidadDePuntos(mapaActual);
+            Console.WriteLine($"Mapa N°: {mapaNumero + 1}");
+            Console.WriteLine($"Cantidad de puntos restantes: {cantPuntos}");
+            if (cantPuntos <= 1)
+            {
+                DibujarPuerta();
+            }
+        }
+        static bool TeAlcanzoElEnemigo()
         {
             return jugadorPosX == enemigoPosX && jugadorPosY == enemigoPosY;
         }
@@ -121,8 +128,7 @@ namespace JuegoRetro
                 SpawnearEnemigo(ref laberinto);
             }
         }
-
-        private static void SpawnearEnemigo(ref char[,] laberinto)
+        static void SpawnearEnemigo(ref char[,] laberinto)
         {
             Random r = new Random();
             do
@@ -132,7 +138,6 @@ namespace JuegoRetro
                 
             } while (laberinto[enemigoPosX, enemigoPosY] == '#');
         }
-
         static void MoverEnemigo(ref char[,] laberinto)
         {
             // Buscar la posición del jugador
