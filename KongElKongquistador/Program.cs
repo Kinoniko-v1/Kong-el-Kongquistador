@@ -10,15 +10,15 @@ namespace GJN3_Diseño
         static void Main(string[] args)
         {
             Ventana.AjustarVentana(); // Este método no se puede modificar
-            Escritor.EscribirTitulo("Hello World! - Inicia class Program\n");
+            //Escritor.EscribirTitulo("Hello World! - Inicia class Program\n");
             Ventana.DibujarMarco();
 
             /* El proyecto final arranca con estas dos lineas. 
                ** Pueden descomentarlas, pero luego comentenlas denuevo **
             */ 
 
-            MaquinaDeEstados mef = new MaquinaDeEstados();
-            mef.Iniciar(); 
+            //MaquinaDeEstados mef = new MaquinaDeEstados();
+            //mef.Iniciar(); 
 
 
             // Para testear cada juego por separado, modifiquen este método de la clase Testing

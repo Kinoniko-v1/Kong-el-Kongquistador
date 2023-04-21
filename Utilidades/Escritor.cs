@@ -11,7 +11,7 @@ namespace Utilidades
         // (Ahorra tener que desplazar el cursor cada vez que se mande un mensaje)
     public static class Escritor
     {
-        public static void Esribir(string texto)
+        public static void Escribir(string texto)
         {
             // Escribe un mensaje animado donde se encuentre el cursor
             foreach (char item in texto)
@@ -29,6 +29,12 @@ namespace Utilidades
                 Console.Write(item);
                 Thread.Sleep(50);
             }
+        }
+        public static void Escribir(string texto, int cordX, int cordY, bool b)
+        {
+            // Escribe donde se le indique en coordenadas
+            Console.SetCursorPosition(cordX, cordY);
+            Console.Write(texto);
         }
         public static void EscribirIzq(string texto)
         {
