@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JuegoRetro;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using Utilidades;
@@ -14,11 +15,12 @@ namespace Minijuegos
         public void Iniciar()
         {
             Escritor.Escribir("MiniJuego Dos - ejecutándose", 0, 0);
+            new Vista().MostrarMenu();
         }
 
         public void Actualizar()
         {
-
+            
         }
 
         public void Finalizar()

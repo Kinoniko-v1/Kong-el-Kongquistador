@@ -4,27 +4,33 @@ using System.Threading;
 
 namespace JuegoRetro
 {
-    public static class GameLoop
+    public class GameLoop
     {
-        static int jugadorPosX = 1;
-        static int jugadorPosY = 1;
+        private int jugadorPosX = 1;
+        private int jugadorPosY = 1;
 
-        static int enemigoPosX = 6;
-        static int enemigoPosY = 6;
+        private int enemigoPosX = 6;
+        private int enemigoPosY = 6;
 
-        static int mapaNumero = 0;
-        public static void IniciarGameLoop()
+        private int mapaNumero = 0;
+        private bool gano = false;
+
+        Laberinto lab = new Laberinto();
+        public void IniciarGameLoop()
         {
-            
-            char[,] mapaActual = Laberinto.DevolverLaberinto(mapaNumero);
+            char[,] mapaActual = lab.DevolverLaberinto(mapaNumero);
             bool alcanzado;
 
             ConsoleKeyInfo tecla = new ConsoleKeyInfo();
             do
             {
-                Console.Clear();
-                if (mapaNumero > 2) break;
+                if (mapaNumero > 2)
+                {
+                    gano = true;
+                    break;
+                }
 
+                Console.Clear();
                 DibujarLaberinto(mapaActual);
                 ImprimirPuntos(mapaActual);
 
@@ -39,9 +45,23 @@ namespace JuegoRetro
                     MoverEnemigo(ref mapaActual);
                 }
             } while (tecla.Key != ConsoleKey.Escape && !alcanzado);
+
+            if (gano)
+            {
+                //Terminar
+                //-- o podria hacer que el gameLoop retorne un bool que siga si gano o no --//
+            }
+            else
+            {
+                Console.Clear();
+                Console.WriteLine("Creo que te han atrapado, inténtalo de nuevo!");
+                Console.ReadKey();
+                Vista v = new Vista();
+                v.MostrarMenu();
+            }
         }
 
-        static void ImprimirPuntos(char[,] mapaActual)
+        private void ImprimirPuntos(char[,] mapaActual)
         {
             //puntos restantes:
             int cantPuntos = CantidadDePuntos(mapaActual);
@@ -52,11 +72,11 @@ namespace JuegoRetro
                 DibujarPuerta();
             }
         }
-        static bool TeAlcanzoElEnemigo()
+        private bool TeAlcanzoElEnemigo()
         {
             return jugadorPosX == enemigoPosX && jugadorPosY == enemigoPosY;
         }
-        static void DibujarLaberinto(char[,] laberinto)
+        private void DibujarLaberinto(char[,] laberinto)
         {
             for (int i = 0; i < laberinto.GetLength(0); i++)
             {
@@ -67,14 +87,14 @@ namespace JuegoRetro
                 Console.WriteLine();
             }
         }
-        static int CantidadDePuntos(char[,] laberinto)
+        private int CantidadDePuntos(char[,] laberinto)
         {
             int puntos = 0;
             for (int i = 0; i < laberinto.GetLength(0); i++)
             {
                 for (int j = 0; j < laberinto.GetLength(1); j++)
                 {
-                    if (laberinto[i,j] == '.')
+                    if (laberinto[i, j] == '.')
                     {
                         puntos++;
                     }
@@ -82,17 +102,17 @@ namespace JuegoRetro
             }
             return puntos;
         }
-        static void DibujarJugador()
+        private void DibujarJugador()
         {
             Console.SetCursorPosition(jugadorPosY, jugadorPosX);
             Console.Write('P');
         }
-        static void DibujarEnemigo()
+        private void DibujarEnemigo()
         {
             Console.SetCursorPosition(enemigoPosY, enemigoPosX);
             Console.Write('E');
         }
-        static void MoverJugador(ConsoleKey tecla, ref char[,] laberinto)
+        private void MoverJugador(ConsoleKey tecla, ref char[,] laberinto)
         {
             int nuevaPosX = jugadorPosX;
             int nuevaPosY = jugadorPosY;
@@ -122,23 +142,23 @@ namespace JuegoRetro
             if (laberinto[nuevaPosX, nuevaPosY] == 'K')
             {
                 mapaNumero++;
-                laberinto = Laberinto.SiguienteNivel(mapaNumero);
+                laberinto = lab.SiguienteNivel(mapaNumero);
                 jugadorPosX = 1;
                 jugadorPosY = 1;
                 SpawnearEnemigo(ref laberinto);
             }
         }
-        static void SpawnearEnemigo(ref char[,] laberinto)
+        private void SpawnearEnemigo(ref char[,] laberinto)
         {
             Random r = new Random();
             do
             {
                 enemigoPosX = r.Next(7, 11);
                 enemigoPosY = r.Next(7, 11);
-                
+
             } while (laberinto[enemigoPosX, enemigoPosY] == '#');
         }
-        static void MoverEnemigo(ref char[,] laberinto)
+        private void MoverEnemigo(ref char[,] laberinto)
         {
             // Buscar la posición del jugador
             int jugadorDistanciaX = jugadorPosX - enemigoPosX;
@@ -168,9 +188,9 @@ namespace JuegoRetro
                 }
             }
         }
-        static void DibujarPuerta()
+        private void DibujarPuerta()
         {
-            Laberinto.CrearPuerta(mapaNumero);
+            lab.CrearPuerta(mapaNumero);
         }
     }
 }
