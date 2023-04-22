@@ -20,7 +20,7 @@ namespace Minijuegos
         public KongGame()
         {
             // Inicializar objetos
-            objetivo.X = 8;
+            objetivo.X = 12;
             objetivo.Y = 10;
             jugador = new Jugador(10, 31);
             plataformas = new List<Plataforma>
@@ -32,10 +32,10 @@ namespace Minijuegos
             };
             balas = new List<Bala>
             {
-                new Bala(150,33,-3),
-                new Bala(4,25,3),
-                new Bala(150,17,-3),
-                new Bala(4,9,3)
+                new Bala(150,33,-2),
+                new Bala(4,25,2),
+                new Bala(150,17,-2),
+                new Bala(4,9,2)
             };
         }
         #region Métodos Interfaz
@@ -63,20 +63,18 @@ namespace Minijuegos
                 Console.SetCursorPosition(Console.WindowWidth - s.Length - 3, 3);
                 Console.Write(s);
 
-                // Chequear colisiones
-                foreach (Plataforma plataforma in plataformas)
-                {
-                    //jugador.ColisionTecho(plataforma);
-                    jugador.ColisionPiso(plataforma);
-                }
-
                 DibujarGameObjects();
 
                 // Recibir Inputs del jugador y Actualizar GameObject
                 Entradas();
                 ActualizarGameObjects();
 
-                
+                // Chequear colisiones
+                foreach (Plataforma plataforma in plataformas)
+                {
+                    jugador.ColisionTecho(plataforma);
+                    jugador.ColisionPiso(plataforma);
+                }
 
                 // Comprobar si termino la partida o se debe reiniciar el gameLoop
                 if (ComprobarDerrota())
@@ -96,7 +94,6 @@ namespace Minijuegos
             else if (vidas <= 0)
                 victoria = false;
         }
-
         public int Finalizar()
         {
             // Se ejecuta una vez finalizado el minijuego para realizar una transición

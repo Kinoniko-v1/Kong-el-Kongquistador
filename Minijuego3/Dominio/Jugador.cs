@@ -28,7 +28,7 @@ namespace Minijuegos.Minijuego3
 
         public void Dibujar()
         {
-            Console.ForegroundColor = ConsoleColor.Green;
+            Console.ForegroundColor = ConsoleColor.Cyan;
             if (velocidadY > 0)
             {
                 Console.SetCursorPosition(posicion.X, posicion.Y);
@@ -88,33 +88,27 @@ namespace Minijuegos.Minijuego3
             else if (posicion.X > 154)
                 posicion.X = 154;
 
-            if (posicion.Y > 33 && posicion.X < 150)
+            if (posicion.Y > 31 && posicion.X < 150)
                 posicion.Y = 31;
             else if (posicion.Y < 5)
                 posicion.Y = 5;
         }
-        public void ColisionPiso(Plataforma plataforma)
+        public void ColisionPiso(Plataforma plataforma) //Funciona bien
         {
-            if (posicion.Y >= plataforma.GetTop() && posicion.Y +Alto <= plataforma.GetTop()
-                && posicion.X >= plataforma.GetLeft() && posicion.X <= plataforma.GetRight() -1)
+            if (posicion.Y <= plataforma.GetTop() && posicion.Y + Alto >= plataforma.GetTop()
+                && posicion.X >= plataforma.GetLeft()-1 && posicion.X + ancho <= plataforma.GetRight()+1)
             {
-                posicion.Y = plataforma.GetTop() - Alto;
                 velocidadY = 0;
+                posicion.Y = plataforma.GetTop() - Alto;
                 saltando = false;
             }
         }
         public void ColisionTecho(Plataforma plataforma)
         {
-            if(posicion.Y >= plataforma.GetBottom()) // Está debajo de la plataforma
-            {
-                if (posicion.X >= plataforma.GetLeft() && posicion.X + ancho <= plataforma.GetRight())
-                {   // Esta en los limites de la plataforma
-
-                    if (posicion.Y <= plataforma.GetBottom())
-                    {
-                        posicion.Y = plataforma.GetBottom() - 1;
-                    }
-                }
+            if (posicion.Y <= plataforma.GetBottom() && posicion.Y + Alto >= plataforma.GetBottom()
+                && posicion.X >= plataforma.GetLeft()-1 && posicion.X + ancho <= plataforma.GetRight()+1)
+            { 
+                posicion.Y = plataforma.GetBottom();
             }
         }
         public bool ColisionaCon(Bala bala)
