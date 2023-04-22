@@ -8,19 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\marti\\.nuget\\packages\\": {}
+    "C:\\Users\\omarm\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marti\\repos\\quarkGameJam03\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj",
+      "projectUniqueName": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj",
       "projectName": "Utilidades",
-      "projectPath": "C:\\Users\\marti\\repos\\quarkGameJam03\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj",
-      "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marti\\repos\\quarkGameJam03\\Kong-el-Kongquistador\\Utilidades\\obj\\",
+      "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj",
+      "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -51,8 +56,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -61,7 +65,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
       }
     }
   }
