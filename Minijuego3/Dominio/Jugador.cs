@@ -60,7 +60,7 @@ namespace Minijuegos.Minijuego3
         }
         public void PararSalto()
         {
-            if(velocidadY > 5)
+            if (velocidadY > 5)
             {
                 saltando = false;
             }

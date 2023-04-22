@@ -37,6 +37,8 @@ namespace GJN3_Diseño
                 {
                     case EstadoDeJuego.Minijuego1:
                         miniJuego1.Iniciar();
+                        miniJuego1.Actualizar();
+                        miniJuego1.Finalizar();
 
                         estado = EstadoDeJuego.Minijuego2;
                         Console.ReadKey();

@@ -18,6 +18,7 @@ C:\Users\Kinoniko\Desktop\Quark GameJam 3\Utilidades\obj\Debug\netcoreapp3.1\Uti
 C:\Users\Kinoniko\Desktop\Quark GameJam 3\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.csproj.CoreCompileInputs.cache
 C:\Users\Kinoniko\Desktop\Quark GameJam 3\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.dll
 C:\Users\Kinoniko\Desktop\Quark GameJam 3\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.pdb
+<<<<<<< HEAD
 C:\Users\Kinoniko\Desktop\QGJ3 Kong el Kongquistador\Utilidades\bin\Debug\netcoreapp3.1\Utilidades.deps.json
 C:\Users\Kinoniko\Desktop\QGJ3 Kong el Kongquistador\Utilidades\bin\Debug\netcoreapp3.1\Utilidades.dll
 C:\Users\Kinoniko\Desktop\QGJ3 Kong el Kongquistador\Utilidades\bin\Debug\netcoreapp3.1\Utilidades.pdb
@@ -28,3 +29,15 @@ C:\Users\Kinoniko\Desktop\QGJ3 Kong el Kongquistador\Utilidades\obj\Debug\netcor
 C:\Users\Kinoniko\Desktop\QGJ3 Kong el Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.csproj.CoreCompileInputs.cache
 C:\Users\Kinoniko\Desktop\QGJ3 Kong el Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.dll
 C:\Users\Kinoniko\Desktop\QGJ3 Kong el Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.pdb
+=======
+C:\Users\marti\repos\quarkGameJam03\Kong-el-Kongquistador\Utilidades\bin\Debug\netcoreapp3.1\Utilidades.deps.json
+C:\Users\marti\repos\quarkGameJam03\Kong-el-Kongquistador\Utilidades\bin\Debug\netcoreapp3.1\Utilidades.dll
+C:\Users\marti\repos\quarkGameJam03\Kong-el-Kongquistador\Utilidades\bin\Debug\netcoreapp3.1\Utilidades.pdb
+C:\Users\marti\repos\quarkGameJam03\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.csproj.AssemblyReference.cache
+C:\Users\marti\repos\quarkGameJam03\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marti\repos\quarkGameJam03\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.AssemblyInfoInputs.cache
+C:\Users\marti\repos\quarkGameJam03\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.AssemblyInfo.cs
+C:\Users\marti\repos\quarkGameJam03\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.csproj.CoreCompileInputs.cache
+C:\Users\marti\repos\quarkGameJam03\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.dll
+C:\Users\marti\repos\quarkGameJam03\Kong-el-Kongquistador\Utilidades\obj\Debug\netcoreapp3.1\Utilidades.pdb
+>>>>>>> 03a8a261b7475d26217947dbd3d4c1c57b4048ac

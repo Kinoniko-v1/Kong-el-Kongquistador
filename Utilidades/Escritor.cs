@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 using System.Threading;
+using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace Utilidades
 {
@@ -45,6 +47,133 @@ namespace Utilidades
             // Escribe en posición Default en el centro superior
             int largo = texto.Length/2;
             Escribir(texto, Console.WindowWidth / 2 - largo, 1);
+        }
+            
+        public static void LimpiaPantalla()
+        {
+            Console.Clear();
+        }
+
+        public static void AhorcadoInicial(String randomPalabra, int numeroIntentos)
+        {
+            EscribeAhorcado("");
+            EscribeAhorcado("Que comience el juego!");
+            EscribeAhorcado("");
+
+            EscribeAhorcado("");
+            EscribeAhorcado("Ya elegí una palabra, de " + randomPalabra.Length + " letras");
+            EscribeAhorcado("");
+            //Escritor.EscribirIzq("La palabra es " + randomPalabra);
+            EscribeAhorcado("Tenés " + numeroIntentos + " intentos");
+        }
+        public static void EscribeAhorcado(String texto)
+        {
+            Console.SetCursorPosition(4, Console.CursorTop); //igual a EscribeIzq, pero solo en X
+            Console.WriteLine(texto);
+        }
+
+        public static void EscribeAhorcadoSinSalto(string texto)
+        {
+            Console.SetCursorPosition(4, Console.CursorTop); //igual a EscribeIzq, pero solo en X
+            Console.Write(texto);
+        }
+
+        public static void MostrarPalabraAdivinar(String randomPalabra, Array letrasAdivinadas)
+        {
+            string palabra = "";
+
+            for (int i = 0; i < randomPalabra.Length; i++)
+            {
+                if (Array.IndexOf(letrasAdivinadas, randomPalabra[i].ToString()) != -1)
+                {
+                    palabra += randomPalabra[i];
+                }
+                else
+                {
+                    palabra += "_";
+                }
+            }
+            EscribeAhorcado(palabra);
+        }
+
+        public static void EscribirLetrasUsadas(List<string> letrasUsadas)
+        {
+            EscribeAhorcado("Letras usadas: ");
+            EscribeAhorcado("");
+            foreach (string l in letrasUsadas)
+            {
+                EscribeAhorcado(l + " ");
+            }
+        }
+
+        public static void DibujarAhorcado(int PartesCuerpo)
+        {
+            switch (PartesCuerpo)
+            {
+                case 0:
+                    EscribeAhorcado(" _____   ");
+                    EscribeAhorcado("|     |  ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("=========");
+                    break;
+                case 1:
+                    EscribeAhorcado(" _____   ");
+                    EscribeAhorcado("|     |  ");
+                    EscribeAhorcado("|     O  ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("=========");
+                    break;
+                case 2:
+                    EscribeAhorcado(" _____   ");
+                    EscribeAhorcado("|     |  ");
+                    EscribeAhorcado("|     O  ");
+                    EscribeAhorcado("|     |  ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("=========");
+                    break;
+                case 3:
+                    EscribeAhorcado(" _____   ");
+                    EscribeAhorcado("|     |  ");
+                    EscribeAhorcado("|     O  ");
+                    EscribeAhorcado("|    /|  ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("=========");
+                    break;
+                case 4:
+                    EscribeAhorcado(" _____   ");
+                    EscribeAhorcado("|     |  ");
+                    EscribeAhorcado("|     O  ");
+                    EscribeAhorcado("|    /|\\ ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("=========");
+                    break;
+                case 5:
+                    EscribeAhorcado(" _____   ");
+                    EscribeAhorcado("|     |  ");
+                    EscribeAhorcado("|     O  ");
+                    EscribeAhorcado("|    /|\\ ");
+                    EscribeAhorcado("|    /   ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("=========");
+                    break;
+                case 6:
+                    EscribeAhorcado(" _____   ");
+                    EscribeAhorcado("|     |  ");
+                    EscribeAhorcado("|     O  ");
+                    EscribeAhorcado("|    /|\\ ");
+                    EscribeAhorcado("|    / \\ ");
+                    EscribeAhorcado("|        ");
+                    EscribeAhorcado("=========");
+                    break;
+            }
         }
 
         public static void EscribirDatoI(string texto) { }

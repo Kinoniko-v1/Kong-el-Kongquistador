@@ -9,8 +9,8 @@ namespace Minijuegos.Minijuego3
     {
         public Point posicion = new Point();
         private int velocidad;
-        
-        public Bala(int coordX,int coordY, int velocidad)
+
+        public Bala(int coordX, int coordY, int velocidad)
         {
             posicion.X = coordX;
             posicion.Y = coordY;
@@ -18,7 +18,7 @@ namespace Minijuegos.Minijuego3
         }
         public void Dibujar()
         {
-            Console.SetCursorPosition(posicion.X,posicion.Y);
+            Console.SetCursorPosition(posicion.X, posicion.Y);
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
             Console.Write("¤");
             Console.ForegroundColor = ConsoleColor.White;

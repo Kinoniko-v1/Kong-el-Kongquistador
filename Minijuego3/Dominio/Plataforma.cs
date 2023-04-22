@@ -45,3 +45,4 @@ namespace Minijuegos.Minijuego3
         public int GetRight() { return posicion.X + ancho; }
     }
 }
+

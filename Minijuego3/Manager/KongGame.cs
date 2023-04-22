@@ -8,8 +8,6 @@ namespace Minijuegos
 {
     public class KongGame : IMiniJuego
     {
-        private readonly IVista _vista;
-
         private List<Plataforma> plataformas;
         private List<Bala> balas;
         Jugador jugador;
@@ -35,8 +33,6 @@ namespace Minijuegos
                 new Bala(150,17,-3),
                 new Bala(4,9,3)
             };
-
-            
         }
         public void Iniciar()
         {
@@ -80,13 +76,12 @@ namespace Minijuegos
                 // Comprobar si termino la partida
                 if (ComprobarDerrota())
                     jugando = false;
-                if(ComprobarVictoria())
+                if (ComprobarVictoria())
                     jugando = false;
 
                 // Pausa el juego para mantener la velocidad
                 System.Threading.Thread.Sleep(35);
             }
-
             if (vidas > 0)
                 Reiniciar();
         }
@@ -102,17 +97,11 @@ namespace Minijuegos
             {
                 ConsoleKeyInfo key = Console.ReadKey(true);
                 if (key.Key == ConsoleKey.LeftArrow)
-                {
                     jugador.MoverIzq();
-                }
                 else if (key.Key == ConsoleKey.RightArrow)
-                {
                     jugador.MoverDer();
-                }
                 else if (key.Key == ConsoleKey.UpArrow)
-                {
                     jugador.Saltar();
-                }
             }
         }
 
@@ -129,6 +118,7 @@ namespace Minijuegos
             {
                 bala.Dibujar();
             }
+            DibujarObjetivo();
         }
         private void ActualizarGameObjects()
         {
@@ -137,6 +127,10 @@ namespace Minijuegos
             {
                 bala.Actualizar();
             }
+        }
+        private void DibujarObjetivo()
+        {
+
         }
         #endregion
 
