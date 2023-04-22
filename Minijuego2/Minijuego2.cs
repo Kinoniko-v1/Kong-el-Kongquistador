@@ -23,8 +23,9 @@ namespace Minijuegos
 
         }
 
-        public void Finalizar()
+        public int Finalizar()
         {
+            return 15;
         }
     }
 }

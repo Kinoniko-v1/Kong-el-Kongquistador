@@ -158,7 +158,7 @@ namespace JuegoRetro
                 jugadorPosX = nuevaPosX;
                 jugadorPosY = nuevaPosY;
             }
-            if (laberinto[nuevaPosX, nuevaPosY] == 'K')
+            if (laberinto[nuevaPosX, nuevaPosY] == '¦')
             {
                 mapaNumero++;
                 laberinto = lab.SiguienteNivel(mapaNumero);

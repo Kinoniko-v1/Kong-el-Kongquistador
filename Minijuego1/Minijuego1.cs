@@ -3,14 +3,18 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml.Linq;
 using System.Media;
-using NAudio.Wave;
+//using NAudio.Wave;
 using Utilidades;
 
 namespace Minijuegos
 {
     public class Minijuego1 : IMiniJuego
     {
-        private static string[] palabras = { "quark", "nave", "alien", "planeta", "estrella", "galaxia", "satelite", "astronauta", "exploracion", "orbita", "supernova", "telescopio", "cometa", "meteorito", "constelacion", "eclipse", "cosmos", "espacio", "gravedad", "luna", "marte", "nebulosa", "sistema", "nuclear", "tierra", "cohete", "mision" };
+        private static string[] palabras = 
+            { "donkeykong", "pong", "spaceinvaders", "tetris", "estrella", "galaxia", "satelite", 
+            "astronauta", "exploracion", "orbita", "supernova", "telescopio", "cometa", 
+            "meteorito", "constelacion", "eclipse", "cosmos", "espacio", "gravedad", 
+            "luna", "marte", "nebulosa", "sistema", "nuclear", "tierra", "cohete", "mision" };
 
         private static Random random = new Random();
 
@@ -54,9 +58,13 @@ namespace Minijuegos
             bool ganasteAhorcado = false;
             while (numeroIntentos > 0 && ganasteAhorcado == false)
             {
+                Ventana.DibujarMarco();
+
                 Escritor.EscribeAhorcado("");
                 Escritor.EscribeAhorcado("¿Qué letra elegís?");
+                Console.CursorVisible = true;
                 String letraElegida = Console.ReadLine().ToLower();
+                Console.CursorVisible = false;
 
                 if (letraElegida.Length == 1 && char.IsLetter(letraElegida[0]) && !letrasUsadas.Contains(letraElegida))
                 {
@@ -66,8 +74,8 @@ namespace Minijuegos
                         letrasAdivinadas[randomPalabra.IndexOf(letraElegida)] = letraElegida;
                         Escritor.EscribeAhorcado("Acertaste la letra");
                         //PLAY SOUND
-                        var playerLetraSi = new SoundPlayer(@"Sonidos\jump.wav");
-                        playerLetraSi.Play();
+                        //var playerLetraSi = new SoundPlayer(@"Sonidos\jump.wav");
+                        //playerLetraSi.Play();
 
                     }
                     else
@@ -76,8 +84,8 @@ namespace Minijuegos
                         numeroIntentos--;
                         Escritor.EscribeAhorcado("Esa letra no está");
                         //PLAY SOUND
-                        var playerLetraNo = new SoundPlayer(@"Sonidos\explosion.wav");
-                        playerLetraNo.Play();
+                        //var playerLetraNo = new SoundPlayer(@"Sonidos\explosion.wav");
+                        //playerLetraNo.Play();
                     }
 
                     Escritor.DibujarAhorcado(partesCuerpo);
@@ -109,8 +117,8 @@ namespace Minijuegos
                     {
                         //var player = new SoundPlayer(@"D:\Martin\CS\C#_QuarkAcademy\GameJam03\Sonidos\Laser_Shoot.wav");
                         //var player = new SoundPlayer(@"D:\Martin\CS\C#_QuarkAcademy\GameJam03\00_AhorcadoMVP\Domain_AhorcadoMVP\Sonidos\Laser_Shoot.wav");
-                        var playerGana = new SoundPlayer(@"Sonidos\recover.wav");
-                        playerGana.Play();
+                        //var playerGana = new SoundPlayer(@"Sonidos\recover.wav");
+                        //playerGana.Play();
 
                         numeroIntentos = 0;
                         ganasteAhorcado = true;
@@ -139,8 +147,8 @@ namespace Minijuegos
             {
                 //PLAY SOUND
                 //var player = new SoundPlayer(@"D:\Martin\CS\C#_QuarkAcademy\GameJam03\Sonidos\evilLaugh.wav");
-                var playerPierde = new SoundPlayer(@"Sonidos\evilLaugh.wav");
-                playerPierde.Play();
+                //var playerPierde = new SoundPlayer(@"Sonidos\evilLaugh.wav");
+                //playerPierde.Play();
                 Escritor.EscribeAhorcado("");
                 Escritor.EscribeAhorcado("Game over! La palabra era " + randomPalabra);
                 Escritor.EscribeAhorcado("Presioná cualquier tecla para jugar de nuevo");
@@ -152,7 +160,7 @@ namespace Minijuegos
             }
         }
 
-        public void Finalizar()
+        public int Finalizar()
         {
             Escritor.EscribeAhorcado("");
             Escritor.EscribeAhorcado("ME GANASTE!");
@@ -160,6 +168,7 @@ namespace Minijuegos
             Console.ReadKey();
             Escritor.LimpiaPantalla();
             //Escritor.EscribirIzq("Minijuego1 finalizado, pasando a Minijuego2");
+            return 15;
         }
     }
 }

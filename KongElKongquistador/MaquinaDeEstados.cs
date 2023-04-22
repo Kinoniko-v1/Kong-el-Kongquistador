@@ -16,6 +16,8 @@ namespace GJN3_Diseño
         private readonly IMiniJuego miniJuego2;
         private readonly IMiniJuego KongJuego;
 
+        private int vicAcumuladas = 0;
+
         public MaquinaDeEstados()
         {
             Escritor.EscribirIzq("Máquina creada");
@@ -38,7 +40,7 @@ namespace GJN3_Diseño
                     case EstadoDeJuego.Minijuego1:
                         miniJuego1.Iniciar();
                         miniJuego1.Actualizar();
-                        miniJuego1.Finalizar();
+                        vicAcumuladas += miniJuego1.Finalizar();
 
                         estado = EstadoDeJuego.Minijuego2;
                         Console.ReadKey();
@@ -46,14 +48,14 @@ namespace GJN3_Diseño
 
                     case EstadoDeJuego.Minijuego2:
                         miniJuego2.Iniciar();
-                        
+                        vicAcumuladas += miniJuego2.Finalizar();
                         estado = EstadoDeJuego.Minijuego3;
                         Console.ReadKey();
                         break;
 
                     case EstadoDeJuego.Minijuego3:
                         KongJuego.Iniciar();
-
+                        vicAcumuladas += KongJuego.Finalizar();
                         estado = EstadoDeJuego.terminado;
                         Console.ReadKey();
                         break;

@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NAudio" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Minijuego1\Minijuego1.csproj" />
     <ProjectReference Include="..\Minijuego2\Minijuego2.csproj" />
     <ProjectReference Include="..\Minijuego3\Minijuego3.csproj" />

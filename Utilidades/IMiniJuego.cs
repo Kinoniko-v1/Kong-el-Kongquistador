@@ -9,6 +9,6 @@ namespace Utilidades
         // Interfaz para poder llamar al Presentaor o GameManager de cada juego desde la Máquina de Estados
         public void Iniciar();
         public void Actualizar();
-        public void Finalizar();
+        public int Finalizar();
     }
 }

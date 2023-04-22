@@ -1,7 +1,6 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\KongElKongquistador\\KongElKonquistador.csproj": {}
   },
   "projects": {
@@ -13,29 +12,12 @@
         "projectPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\KongElKongquistador\\KongElKonquistador.csproj",
         "packagesPath": "C:\\Users\\Kinoniko\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\KongElKongquistador\\obj\\",
-=======
-    "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\KongElKongquistador\\KongElKonquistador.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\KongElKongquistador\\KongElKonquistador.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\KongElKongquistador\\KongElKonquistador.csproj",
-        "projectName": "KongElKonquistador",
-        "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\KongElKongquistador\\KongElKonquistador.csproj",
-        "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\KongElKongquistador\\obj\\",
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\Kinoniko\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,7 +32,6 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego1\\Minijuego1.csproj": {
                 "projectPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego1\\Minijuego1.csproj"
               },
@@ -62,19 +43,6 @@
               },
               "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\Utilidades.csproj": {
                 "projectPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\Utilidades.csproj"
-=======
-              "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego1\\Minijuego1.csproj": {
-                "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego1\\Minijuego1.csproj"
-              },
-              "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego2\\Minijuego2.csproj": {
-                "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego2\\Minijuego2.csproj"
-              },
-              "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego3\\Minijuego3.csproj": {
-                "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego3\\Minijuego3.csproj"
-              },
-              "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj": {
-                "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj"
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
               }
             }
           }
@@ -88,6 +56,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -103,7 +77,6 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
@@ -116,30 +89,12 @@
         "projectPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego1\\Minijuego1.csproj",
         "packagesPath": "C:\\Users\\Kinoniko\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego1\\obj\\",
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego1\\Minijuego1.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego1\\Minijuego1.csproj",
-        "projectName": "Minijuego1",
-        "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego1\\Minijuego1.csproj",
-        "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego1\\obj\\",
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\Kinoniko\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -154,13 +109,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\Utilidades.csproj": {
                 "projectPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\Utilidades.csproj"
-=======
-              "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj": {
-                "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj"
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
               }
             }
           }
@@ -174,6 +124,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -189,7 +145,6 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
@@ -202,30 +157,12 @@
         "projectPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego2\\Minijuego2.csproj",
         "packagesPath": "C:\\Users\\Kinoniko\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego2\\obj\\",
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego2\\Minijuego2.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego2\\Minijuego2.csproj",
-        "projectName": "Minijuego2",
-        "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego2\\Minijuego2.csproj",
-        "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego2\\obj\\",
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\Kinoniko\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -240,13 +177,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\Utilidades.csproj": {
                 "projectPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\Utilidades.csproj"
-=======
-              "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj": {
-                "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj"
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
               }
             }
           }
@@ -260,6 +192,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -275,7 +213,6 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
@@ -288,30 +225,12 @@
         "projectPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego3\\Minijuego3.csproj",
         "packagesPath": "C:\\Users\\Kinoniko\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego3\\obj\\",
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego3\\Minijuego3.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego3\\Minijuego3.csproj",
-        "projectName": "Minijuego3",
-        "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego3\\Minijuego3.csproj",
-        "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego3\\obj\\",
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\Kinoniko\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -326,13 +245,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-<<<<<<< HEAD
               "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\Utilidades.csproj": {
                 "projectPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\Utilidades.csproj"
-=======
-              "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj": {
-                "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj"
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
               }
             }
           }
@@ -346,6 +260,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -361,7 +281,6 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
         }
       }
@@ -374,30 +293,12 @@
         "projectPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\Utilidades.csproj",
         "packagesPath": "C:\\Users\\Kinoniko\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\obj\\",
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj",
-        "projectName": "Utilidades",
-        "projectPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj",
-        "packagesPath": "C:\\Users\\omarm\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\obj\\",
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-<<<<<<< HEAD
           "C:\\Users\\Kinoniko\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-          "C:\\Users\\omarm\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -423,6 +324,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "NAudio": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -438,11 +345,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
-=======
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.415\\RuntimeIdentifierGraph.json"
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
         }
       }
     }

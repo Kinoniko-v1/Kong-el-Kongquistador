@@ -13,10 +13,21 @@ namespace Utilidades
         // Setea las dimensiones de la Consola, a partir de estas proporciones se ejecutan los métodos de...
         // las clases Narrador y Ventana (esta misma).
         {
-            Console.SetWindowSize(160, 40);
-            Console.BufferWidth = 160;
-            Console.BufferHeight = 40;
-            Console.CursorVisible = false;
+            if (Console.LargestWindowWidth > 240 
+                && Console.LargestWindowHeight > 63) // 1920x1080 = 240x63 | 
+            {
+                Console.SetWindowSize(160, 40);
+                Console.BufferWidth = 160;
+                Console.BufferHeight = 40;
+                Console.CursorVisible = false;
+            }
+            else
+            {
+                Console.SetWindowSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+                Console.BufferWidth = Console.LargestWindowWidth;
+                Console.BufferHeight = Console.LargestWindowHeight;
+                Console.CursorVisible = false;
+            }
         }
         public static void DibujarMarco() // La idea es que el GameLoop se muestre dentro de un marco.
         {

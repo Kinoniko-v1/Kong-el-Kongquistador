@@ -39,7 +39,6 @@ namespace Minijuegos
             // Inicializa y controla el estado del minijuego
             Escritor.Escribir("MiniJuego Kong - ejecutándose", 0, 0);
             Actualizar();
-            Finalizar();
         }
         private void Reiniciar()
         {
@@ -77,18 +76,31 @@ namespace Minijuegos
                 if (ComprobarDerrota())
                     jugando = false;
                 if (ComprobarVictoria())
+                {
                     jugando = false;
+                    victoria = true;
+                }
 
                 // Pausa el juego para mantener la velocidad
                 System.Threading.Thread.Sleep(35);
             }
             if (vidas > 0)
                 Reiniciar();
+            else if (vidas <= 0)
+                victoria = false;
         }
 
-        public void Finalizar()
+        public int Finalizar()
         {
             // Se ejecuta una vez finalizado el minijuego para realizar una transición
+            if (victoria)
+            {
+                return 1;
+            }
+            else
+            {
+                return 2;
+            }
         }
         private void Entradas()
         {

@@ -1,21 +1,20 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "AUSRSBH7Dz18wnCZ0uJpiEfdoO9HJmL8WfLHvIShTsEdS7fE1iyrZvbkRQVLl3EADuQK0X0I4nCP125ufQ5c5g==",
+  "dgSpecHash": "TjvmIOmGpcXMy3vwV2j4EWBk0pkuXJXyfxRGLTy288Rx4+b956YQe734OgSANlP5V/urmsVEz5QMB4qiKPK2oA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego1\\Minijuego1.csproj",
-=======
-  "dgSpecHash": "w+VqNsXH/ARVqlyXQ+hFq+JduMoUtvzjrWP/CMWz+Vq1F+ORE5FDcb862+GvUM3I6kL21o/IHSdkEmh3bmGQ5g==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego1\\Minijuego1.csproj",
->>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
-  "expectedPackageFiles": [],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego1\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "expectedPackageFiles": [
+    "C:\\Users\\Kinoniko\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\Kinoniko\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
+    "C:\\Users\\Kinoniko\\.nuget\\packages\\naudio\\2.1.0\\naudio.2.1.0.nupkg.sha512",
+    "C:\\Users\\Kinoniko\\.nuget\\packages\\naudio.asio\\2.1.0\\naudio.asio.2.1.0.nupkg.sha512",
+    "C:\\Users\\Kinoniko\\.nuget\\packages\\naudio.core\\2.1.0\\naudio.core.2.1.0.nupkg.sha512",
+    "C:\\Users\\Kinoniko\\.nuget\\packages\\naudio.midi\\2.1.0\\naudio.midi.2.1.0.nupkg.sha512",
+    "C:\\Users\\Kinoniko\\.nuget\\packages\\naudio.wasapi\\2.1.0\\naudio.wasapi.2.1.0.nupkg.sha512",
+    "C:\\Users\\Kinoniko\\.nuget\\packages\\naudio.winforms\\2.1.0\\naudio.winforms.2.1.0.nupkg.sha512",
+    "C:\\Users\\Kinoniko\\.nuget\\packages\\naudio.winmm\\2.1.0\\naudio.winmm.2.1.0.nupkg.sha512",
+    "C:\\Users\\Kinoniko\\.nuget\\packages\\system.security.accesscontrol\\4.7.0\\system.security.accesscontrol.4.7.0.nupkg.sha512",
+    "C:\\Users\\Kinoniko\\.nuget\\packages\\system.security.principal.windows\\4.7.0\\system.security.principal.windows.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
 }
