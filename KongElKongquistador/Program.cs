@@ -17,8 +17,8 @@ namespace GJN3_Diseño
                ** Pueden descomentarlas, pero luego comentenlas denuevo **
             */ 
 
-            MaquinaDeEstados mef = new MaquinaDeEstados();
-            mef.Iniciar(); 
+            //MaquinaDeEstados mef = new MaquinaDeEstados();
+            //mef.Iniciar(); 
 
 
             // Para testear cada juego por separado, modifiquen este método de la clase Testing

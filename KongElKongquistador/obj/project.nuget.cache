@@ -1,8 +1,21 @@
 {
   "version": 2,
+<<<<<<< HEAD
+  "dgSpecHash": "CxUvus5uygHdsxS32yvqorIoX9Wm0PMLoojCaHf7EDYGyT5j7YqYvqxYBosTpdwlAdgfP3jNXycDAE48wWbKZA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\KongElKongquistador\\KongElKonquistador.csproj",
+=======
   "dgSpecHash": "FTaMPV6lBa39iZ5dKXsSlgTEAgv8QZDsxUa+E6C9+H1dws2SM5Sda9F3SWeLXEXXDxkiJecHn3BuDwx/Nj76Dw==",
   "success": true,
   "projectFilePath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\KongElKongquistador\\KongElKonquistador.csproj",
+>>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\KongElKongquistador\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

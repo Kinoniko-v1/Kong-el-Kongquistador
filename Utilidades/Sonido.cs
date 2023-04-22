@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Minijuego3.Vista
+namespace Utilidades
 {
-    internal class Vista
+    class Sonido
     {
-
     }
 }
