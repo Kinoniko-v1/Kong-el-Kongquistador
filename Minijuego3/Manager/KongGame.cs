@@ -1,6 +1,7 @@
 ﻿using Minijuegos.Minijuego3;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
 using Utilidades;
 
@@ -15,9 +16,12 @@ namespace Minijuegos
         private int vidas = 3;
         private bool jugando = true;
         private bool victoria = false;
+        private Point objetivo = new Point();
         public KongGame()
         {
             // Inicializar objetos
+            objetivo.X = 8;
+            objetivo.Y = 10;
             jugador = new Jugador(10, 31);
             plataformas = new List<Plataforma>
             {
@@ -34,6 +38,7 @@ namespace Minijuegos
                 new Bala(4,9,3)
             };
         }
+        #region Métodos Interfaz
         public void Iniciar()
         {
             // Inicializa y controla el estado del minijuego
@@ -57,22 +62,23 @@ namespace Minijuegos
                 Ventana.DibujarMarco();
                 Console.SetCursorPosition(Console.WindowWidth - s.Length - 3, 3);
                 Console.Write(s);
+
+                // Chequear colisiones
+                foreach (Plataforma plataforma in plataformas)
+                {
+                    //jugador.ColisionTecho(plataforma);
+                    jugador.ColisionPiso(plataforma);
+                }
+
                 DibujarGameObjects();
 
                 // Recibir Inputs del jugador y Actualizar GameObject
                 Entradas();
                 ActualizarGameObjects();
 
-                // Chequear colisiones
-                foreach (Plataforma plataforma in plataformas)
-                {
-                    if (jugador.ColisionaCon(plataforma))
-                    {
-                        jugador.posicion.Y = plataforma.GetTop() - jugador.Alto;
-                    }
-                }
+                
 
-                // Comprobar si termino la partida
+                // Comprobar si termino la partida o se debe reiniciar el gameLoop
                 if (ComprobarDerrota())
                     jugando = false;
                 if (ComprobarVictoria())
@@ -82,8 +88,9 @@ namespace Minijuegos
                 }
 
                 // Pausa el juego para mantener la velocidad
-                System.Threading.Thread.Sleep(35);
+                System.Threading.Thread.Sleep(25);
             }
+
             if (vidas > 0)
                 Reiniciar();
             else if (vidas <= 0)
@@ -99,7 +106,7 @@ namespace Minijuegos
             }
             else
             {
-                return 2;
+                return 0;
             }
         }
         private void Entradas()
@@ -116,6 +123,7 @@ namespace Minijuegos
                     jugador.Saltar();
             }
         }
+        #endregion
 
         #region GameObjects
         private void DibujarGameObjects()
@@ -142,7 +150,16 @@ namespace Minijuegos
         }
         private void DibujarObjetivo()
         {
-
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.SetCursorPosition(5, 6);
+            Console.Write("      _");
+            Console.SetCursorPosition(5, 7);
+            Console.Write("     c .");
+            Console.SetCursorPosition(5, 8);
+            Console.Write("\\_   /\\");
+            Console.SetCursorPosition(5, 9);
+            Console.Write("  \\_| ||");
+            Console.ForegroundColor = ConsoleColor.White;
         }
         #endregion
 
@@ -150,7 +167,7 @@ namespace Minijuegos
         private bool ComprobarVictoria()
         {
             // Chequear si el jugador alcanzo el objetivo
-            if (jugador.posicion.X <= 8 && jugador.posicion.Y <= 10)
+            if (jugador.posicion.X <= objetivo.X && jugador.posicion.Y <= objetivo.Y)
             {
                 Escritor.EscribirTitulo("Ganaste!");
                 Console.ReadKey();

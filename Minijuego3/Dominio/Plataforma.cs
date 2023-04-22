@@ -23,11 +23,14 @@ namespace Minijuegos.Minijuego3
         {
             for (int i = 0; i < ancho; i++)
             {
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.SetCursorPosition(posicion.X + i, posicion.Y);
                 Console.Write("-");
+                Console.ForegroundColor = ConsoleColor.DarkYellow;
                 Console.SetCursorPosition(posicion.X + i, posicion.Y + alto - 1);
                 Console.Write("-");
             }
+            Console.ForegroundColor = ConsoleColor.DarkYellow;
             for (int i = 1; i < alto - 1; i++)
             {
                 Console.SetCursorPosition(posicion.X, posicion.Y + i);
@@ -35,6 +38,7 @@ namespace Minijuegos.Minijuego3
                 Console.SetCursorPosition(posicion.X + ancho - 1, posicion.Y + i);
                 Console.Write("|");
             }
+            Console.ForegroundColor = ConsoleColor.White;
         }
         public int GetTop() { return posicion.Y; }
 

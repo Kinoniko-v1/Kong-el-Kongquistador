@@ -28,6 +28,7 @@ namespace Minijuegos.Minijuego3
 
         public void Dibujar()
         {
+            Console.ForegroundColor = ConsoleColor.Green;
             if (velocidadY > 0)
             {
                 Console.SetCursorPosition(posicion.X, posicion.Y);
@@ -44,6 +45,7 @@ namespace Minijuegos.Minijuego3
             }
             Console.SetCursorPosition(posicion.X, posicion.Y + 2);
             Console.Write("/ \\");
+            Console.ForegroundColor = ConsoleColor.White;
         }
         #region Métodos de Inputs
         public void MoverIzq() { velocidadX = -1; }
@@ -54,7 +56,7 @@ namespace Minijuegos.Minijuego3
         {
             if (!saltando)
             {
-                velocidadY = -5;
+                velocidadY = -4;
                 saltando = true;
             }
         }
@@ -86,28 +88,40 @@ namespace Minijuegos.Minijuego3
             else if (posicion.X > 154)
                 posicion.X = 154;
 
-            if (posicion.Y > 31 && posicion.X < 150)
+            if (posicion.Y > 33 && posicion.X < 150)
                 posicion.Y = 31;
             else if (posicion.Y < 5)
                 posicion.Y = 5;
         }
-        public bool ColisionaCon(Plataforma plataforma)
+        public void ColisionPiso(Plataforma plataforma)
         {
-            // Chequear si se superponen los dibujos
-            if (posicion.X + ancho > plataforma.GetLeft() && posicion.X < plataforma.GetRight() &&
-                posicion.Y + alto > plataforma.GetBottom() && posicion.Y < plataforma.GetTop())
+            if (posicion.Y >= plataforma.GetTop() && posicion.Y +Alto <= plataforma.GetTop()
+                && posicion.X >= plataforma.GetLeft() && posicion.X <= plataforma.GetRight() -1)
             {
-                return true;
+                posicion.Y = plataforma.GetTop() - Alto;
+                velocidadY = 0;
+                saltando = false;
             }
-            else
-                return false;
+        }
+        public void ColisionTecho(Plataforma plataforma)
+        {
+            if(posicion.Y >= plataforma.GetBottom()) // Está debajo de la plataforma
+            {
+                if (posicion.X >= plataforma.GetLeft() && posicion.X + ancho <= plataforma.GetRight())
+                {   // Esta en los limites de la plataforma
+
+                    if (posicion.Y <= plataforma.GetBottom())
+                    {
+                        posicion.Y = plataforma.GetBottom() - 1;
+                    }
+                }
+            }
         }
         public bool ColisionaCon(Bala bala)
         {
-            if (posicion.Y + alto == bala.posicion.Y && posicion.X + 1 == bala.posicion.X)
-            {
+            if (bala.posicion.X > posicion.X && bala.posicion.X < posicion.X + ancho - 1
+                && bala.posicion.Y >= posicion.Y && bala.posicion.Y <= posicion.Y + alto - 1)
                 return true;
-            }
             else
                 return false;
         }

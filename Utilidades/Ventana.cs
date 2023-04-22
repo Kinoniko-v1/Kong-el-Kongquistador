@@ -13,8 +13,8 @@ namespace Utilidades
         // Setea las dimensiones de la Consola, a partir de estas proporciones se ejecutan los métodos de...
         // las clases Narrador y Ventana (esta misma).
         {
-            if (Console.LargestWindowWidth > 240 
-                && Console.LargestWindowHeight > 63) // 1920x1080 = 240x63 | 
+            if (Console.LargestWindowWidth < 250 
+                && Console.LargestWindowHeight < 73) // 1920x1080 = 240x63 | 
             {
                 Console.SetWindowSize(160, 40);
                 Console.BufferWidth = 160;
