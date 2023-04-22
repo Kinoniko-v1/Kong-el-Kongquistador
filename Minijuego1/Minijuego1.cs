@@ -11,10 +11,7 @@ namespace Minijuegos
     public class Minijuego1 : IMiniJuego
     {
         private static string[] palabras = 
-            { "donkeykong", "pong", "spaceinvaders", "tetris", "estrella", "galaxia", "satelite", 
-            "astronauta", "exploracion", "orbita", "supernova", "telescopio", "cometa", 
-            "meteorito", "constelacion", "eclipse", "cosmos", "espacio", "gravedad", 
-            "luna", "marte", "nebulosa", "sistema", "nuclear", "tierra", "cohete", "mision" };
+            { "donkeykong", "pong", "spaceinvaders", "tetris", "galaga", "pacman", "frogger" };
 
         private static Random random = new Random();
 
@@ -34,6 +31,7 @@ namespace Minijuegos
         public void Iniciar()
         {
             Escritor.Escribir("MiniJuego Uno - ejecutándose", 0, 0);
+            Escritor.EscribirIzq("Desafío Ahorcado: adiviná el nombre del juego retro");
 
             //inicializa variables
             randomNumero = random.Next(palabras.Length);
