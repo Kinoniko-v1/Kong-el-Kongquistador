@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "MYui0y2Z9ltAEF4UDb1G0v+/Q7vWblPOEJUL0LlZgdHBbehGbMdUNj/xaFtCFlCzsNIabsVs7TRNCHomDCD8ZQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Utilidades\\Utilidades.csproj",
+=======
+  "dgSpecHash": "2g9LCdg4GRNgePUDVG284JAqy2wtID6H4MbAfRgzbP+pVFID3CvAccPG9VDwSRbIOdDon0Wmx1sWnR1Hag5uKA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Utilidades\\Utilidades.csproj",
+>>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
   "expectedPackageFiles": [],
   "logs": [
     {

@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "k9bj9FTrK9S/u9boYwi1NMr2IoOFcrUDBon/eox35CLsAINptZSQCINkggDDc6mzWjS0WYBbxIHcX4bBlh4wEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Kinoniko\\Desktop\\QGJ3 Kong el Kongquistador\\Minijuego3\\Minijuego3.csproj",
+=======
+  "dgSpecHash": "vJlI+r5vg5qmOp+Wef3wfVHGXyh/QX4gapYe+2srBLhfo2PdKYh+YH9u+7L8NSImniHcWzkSJNmezLHLgYlU8g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\omarm\\Desktop\\Nueva carpeta (2)\\Nueva carpeta\\Kong-el-Kongquistador\\Minijuego3\\Minijuego3.csproj",
+>>>>>>> 1dca702f1c7f16b7479fa9ace0222c153f677f9b
   "expectedPackageFiles": [],
   "logs": [
     {

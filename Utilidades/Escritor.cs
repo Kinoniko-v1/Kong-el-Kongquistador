@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Text;
 using System.Threading;
-using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Tab;
 
 namespace Utilidades
 {
@@ -31,6 +29,12 @@ namespace Utilidades
                 Console.Write(item);
                 Thread.Sleep(50);
             }
+        }
+        public static void Escribir(string texto, int cordX, int cordY, bool b)
+        {
+            // Escribe donde se le indique en coordenadas
+            Console.SetCursorPosition(cordX, cordY);
+            Console.Write(texto);
         }
         public static void EscribirIzq(string texto)
         {
