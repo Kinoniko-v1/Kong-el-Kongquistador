@@ -166,7 +166,7 @@ namespace Minijuegos
             Console.ReadKey();
             Escritor.LimpiaPantalla();
             //Escritor.EscribirIzq("Minijuego1 finalizado, pasando a Minijuego2");
-            return 15;
+            return 1;
         }
     }
 }
