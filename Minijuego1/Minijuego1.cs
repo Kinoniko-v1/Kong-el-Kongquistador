@@ -24,6 +24,9 @@ namespace Minijuegos
         private String[] letrasAdivinadas = new String[randomPalabra.Length];
 
         List<string> letrasUsadas = new List<string>();
+        
+        private bool ganaste = false;
+        
         public Minijuego1()
         {
             Escritor.EscribirIzq("Minijuego Uno - Objeto creado");
@@ -53,7 +56,7 @@ namespace Minijuegos
 
         public void Actualizar()
         {
-            bool ganasteAhorcado = false;
+            //bool ganasteAhorcado = false;
             while (numeroIntentos > 0 && ganasteAhorcado == false)
             {
                 Ventana.DibujarMarco();
@@ -119,8 +122,9 @@ namespace Minijuegos
                         //playerGana.Play();
 
                         numeroIntentos = 0;
-                        ganasteAhorcado = true;
-                        //Finalizar();
+                        ganaste = true;
+                        //ganasteAhorcado = true;
+                        Finalizar();
                     }
 
                 }
@@ -128,20 +132,20 @@ namespace Minijuegos
                 {
                     if (letraElegida.Length != 1)
                     {
-                        Escritor.EscribirIzq("Ingresaste más de una letra");
+                        Escritor.EscribeAhorcado("Ingresaste más de una letra");
                     }
                     else if (letrasUsadas.Contains(letraElegida))
                     {
-                        Escritor.EscribirIzq("Ya elegiste esa letra");
+                        Escritor.EscribeAhorcado("Ya elegiste esa letra");
                     }
                     else
                     {
-                        Escritor.EscribirIzq("Lo que tocaste no es una letra");
+                        Escritor.EscribeAhorcado("Lo que tocaste no es una letra");
                     }
-                    Escritor.EscribirIzq("Por favor ingresá un caracter válido");
+                    Escritor.EscribeAhorcado("Por favor ingresá un caracter válido");
                 }
             }
-            if (ganasteAhorcado == false)
+            if (ganaste == false)
             {
                 //PLAY SOUND
                 //var player = new SoundPlayer(@"D:\Martin\CS\C#_QuarkAcademy\GameJam03\Sonidos\evilLaugh.wav");
@@ -153,20 +157,28 @@ namespace Minijuegos
                 Console.ReadKey();
                 Escritor.LimpiaPantalla();
                 //Volver a iniciar hasta que se gane?
-                Iniciar();
-                Actualizar();
+                //Iniciar();
+                //Actualizar();
+                Finalizar();
             }
         }
 
         public int Finalizar()
         {
-            Escritor.EscribeAhorcado("");
-            Escritor.EscribeAhorcado("ME GANASTE!");
-            Escritor.EscribeAhorcado("Presioná cualquier tecla para avanzar");
-            Console.ReadKey();
-            Escritor.LimpiaPantalla();
-            //Escritor.EscribirIzq("Minijuego1 finalizado, pasando a Minijuego2");
-            return 1;
+            if (ganaste)
+            {
+                Escritor.EscribeAhorcado("");
+                Escritor.EscribeAhorcado("ME GANASTE!");
+                Escritor.EscribeAhorcado("Presioná cualquier tecla para avanzar");
+                Console.ReadKey();
+                Escritor.LimpiaPantalla();
+                //Escritor.EscribirIzq("Minijuego1 finalizado, pasando a Minijuego2");
+                return 1;
+            }
+            else
+            {
+                return 0;
+            }
         }
     }
 }
