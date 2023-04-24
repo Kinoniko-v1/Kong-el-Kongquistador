@@ -8,6 +8,7 @@ namespace Minijuegos
 {
     public class Minijuego2 : IMiniJuego
     {
+        int valor = 0;
         public Minijuego2()
         {
             Escritor.EscribirIzq("Minijuego Dos - Objeto creado");
@@ -15,7 +16,7 @@ namespace Minijuegos
         public void Iniciar()
         {
             Escritor.Escribir("MiniJuego Dos - ejecutándose", 0, 0);
-            new Vista().MostrarMenu();
+            valor = new Vista().MostrarMenu();
         }
 
         public void Actualizar()
@@ -25,7 +26,7 @@ namespace Minijuegos
 
         public int Finalizar()
         {
-            return 15;
+            return valor;
         }
     }
 }
