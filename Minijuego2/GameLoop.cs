@@ -13,64 +13,64 @@ namespace JuegoRetro
         private int enemigoPosX = 6;
         private int enemigoPosY = 6;
 
-        private int mapaNumero = 0;
+        private static int mapaNumero = 0;
         private bool gano = false;
 
-        int margenY = 11;
-        int margen = 66;
+        private int margenY = 11;
+        private int margen = 66;
+
+        private static int vidas = 3;
 
         Laberinto lab = new Laberinto();
-        public void IniciarGameLoop()
+        public int IniciarGameLoop()
         {
             char[,] mapaActual = lab.DevolverLaberinto(mapaNumero);
-            bool alcanzado;
 
             ConsoleKeyInfo tecla = new ConsoleKeyInfo();
             do
             {
-                if (mapaNumero > 2)
+                if (mapaNumero > 0)
                 {
                     gano = true;
                     break;
                 }
-
+                if (vidas < 1)
+                {
+                    gano = false;
+                    break;
+                }
                 Console.Clear();
+                Console.CursorVisible= false;
                 Ventana.DibujarMarco();
                 DibujarLaberinto(mapaActual);
-                ImprimirPuntos(mapaActual);
+                MostrarInfo(mapaActual);
 
                 DibujarJugador();
                 DibujarEnemigo();
 
-                alcanzado = TeAlcanzoElEnemigo();
-                if (!alcanzado)
-                {
-                    tecla = Console.ReadKey();
-                    MoverJugador(tecla.Key, ref mapaActual);
-                    MoverEnemigo(ref mapaActual);
-                }
-            } while (tecla.Key != ConsoleKey.Escape && !alcanzado);
+                tecla = Console.ReadKey();
+                MoverJugador(tecla.Key, ref mapaActual);
+                MoverEnemigo(ref mapaActual);
+            } while (tecla.Key != ConsoleKey.Escape);
 
             if (gano)
             {
-                //Terminar
-                //-- o podria hacer que el gameLoop retorne un bool que siga si gano o no --//
+                Console.Clear();
+                Ventana.DibujarMarco();
+                Escritor.Escribir($"¡Ganaste!", margen, margenY, true);
+                Console.ReadKey();
+                Console.Clear();
+                return 1;
             }
             else
-            {
-                Console.Clear();
-                Console.WriteLine("Creo que te han atrapado, inténtalo de nuevo!");
-                Console.ReadKey();
-                Vista v = new Vista();
-                v.MostrarMenu();
-            }
+                return 0;
         }
-
-        private void ImprimirPuntos(char[,] mapaActual)
+        private void MostrarInfo(char[,] mapaActual)
         {
             //puntos restantes:
-            int cantPuntos = CantidadDePuntos(mapaActual);
+            int cantPuntos = ObtenerCantidadDePuntos(mapaActual);
             Console.ForegroundColor = ConsoleColor.Yellow;
+            Escritor.Escribir($"Vidas: {vidas}", margen, margenY - 2, true);
             Escritor.Escribir($"Mapa N°: {mapaNumero + 1}", margen, margenY - 1, true);
             Escritor.Escribir($"Cantidad de puntos restantes: {cantPuntos}", margen, 12 + margenY, true);
             Console.ForegroundColor = ConsoleColor.White;
@@ -85,13 +85,6 @@ namespace JuegoRetro
         }
         private void DibujarLaberinto(char[,] laberinto)
         {
-            /*
-                //int consoleWidth = Console.WindowWidth;
-                //int laberintoWidth = laberinto.GetLength(0);
-                // Calcular el margen para centrar el laberinto
-                //margen = (consoleWidth - laberintoWidth) / 2;
-            */
-            // Mostrar el laberinto en la consola con el margen calculado
             for (int i = 0; i < laberinto.GetLength(0); i++)
             {
                 for (int j = 0; j < laberinto.GetLength(1); j++)
@@ -102,7 +95,7 @@ namespace JuegoRetro
                 Console.WriteLine();
             }
         }
-        private int CantidadDePuntos(char[,] laberinto)
+        private int ObtenerCantidadDePuntos(char[,] laberinto)
         {
             int puntos = 0;
             for (int i = 0; i < laberinto.GetLength(0); i++)
@@ -151,7 +144,17 @@ namespace JuegoRetro
                     nuevaPosY++;
                     break;
             }
+            if (TeAlcanzoElEnemigo())
+            {
+                vidas--;
+                jugadorPosX = 1;
+                jugadorPosY = 1;
 
+                enemigoPosX = 6;
+                enemigoPosY = 6;
+
+                IniciarGameLoop();
+            }
             if (laberinto[nuevaPosX, nuevaPosY] != '#')
             {
                 laberinto[jugadorPosX, jugadorPosY] = ' ';
