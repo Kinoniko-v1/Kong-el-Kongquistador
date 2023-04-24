@@ -57,7 +57,7 @@ namespace Minijuegos
         public void Actualizar()
         {
             //bool ganasteAhorcado = false;
-            while (numeroIntentos > 0 && ganasteAhorcado == false)
+            while (numeroIntentos > 0 && ganaste == false)
             {
                 Ventana.DibujarMarco();
 
