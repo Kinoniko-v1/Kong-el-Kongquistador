@@ -75,7 +75,7 @@ namespace JuegoRetro
             char[,] mapa = DevolverLaberinto(numeroMapa);
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             mapa[10, 13] = '¦';
-            mapa[11, 13] = '¦';
+            mapa[10, 14] = '¦';
             Console.ForegroundColor = ConsoleColor.White;
             return mapa;
         }
