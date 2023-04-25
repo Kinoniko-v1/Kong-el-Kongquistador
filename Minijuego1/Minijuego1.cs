@@ -57,11 +57,11 @@ namespace Minijuegos
         {
             while (numeroIntentos > 0 && ganaste == false)
             {
-                Ventana.DibujarMarco();
-
                 Escritor.EscribeAhorcado("");
                 Escritor.EscribeAhorcado("¿Qué letra elegís?");
+                Ventana.DibujarMarco();
                 Console.CursorVisible = true;
+                Console.SetCursorPosition(4, 16);
                 String letraElegida = Console.ReadLine().ToLower();
                 Console.CursorVisible = false;
 
@@ -129,6 +129,7 @@ namespace Minijuegos
                     }
                     Escritor.EscribeAhorcado("Por favor ingresá un caracter válido");
                 }
+                Console.Clear();
             }
             if (ganaste == false)
             {
