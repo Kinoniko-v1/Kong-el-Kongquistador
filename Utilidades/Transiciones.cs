@@ -1,15 +1,40 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
-using Utilidades;
-
 namespace Utilidades
 {
     static public class Transiciones
     {
-        static public void MenuPrincipal()
+        static public void MenuPrincipal(ref bool esc)
         {
+            bool opcion = false;
+            string jugar = "Jugar [ENTER]";
+            string salir = "Salir [ESC]";
+            int posX = Console.WindowWidth / 2;
+            int posY = Console.WindowHeight / 2;
+            Console.Clear();
+            Ventana.DibujarMarco();
+            do
+            {
+                Escritor.Escribir(jugar, posX - jugar.Length/2,posY, true);
+                Escritor.Escribir(salir, posX - salir.Length / 2, posY+1, true);
+                Console.SetCursorPosition(posX, posY + 5);
 
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey(true);
+                    if (key.Key == ConsoleKey.Enter)
+                        opcion = true;
+                    else if (key.Key == ConsoleKey.Escape)
+                    {
+                        esc = true;
+                    }
+                    else
+                        opcion = false;
+                }
+
+            } while (!opcion);
+
+            Ventana.PantallazoRojo();
         }
         static public void Mensaje1()
         {
@@ -60,5 +85,6 @@ namespace Utilidades
             List<string> texto = new List<string> { s1, s2, vacia, s3, vacia, s4 };
             Escritor.EscribirLista(texto, 157 / 2 - s1.Length/2, Console.WindowHeight / 2 - texto.Count);
         }
+
     }
 }

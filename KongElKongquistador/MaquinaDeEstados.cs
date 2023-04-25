@@ -4,7 +4,7 @@ using Utilidades;
 
 namespace GJN3_Diseño
 {
-    enum EstadoDeJuego {terminado,Minijuego1,Minijuego2,Minijuego3 }
+    enum EstadoDeJuego {terminado,Minijuego1,Minijuego2,Minijuego3,MenuPrincipal }
 
     // Maquina de Estados Finitos,
 
@@ -17,6 +17,7 @@ namespace GJN3_Diseño
         private readonly IMiniJuego KongJuego;
 
         private int vicAcumuladas = 0;
+        private bool esc = false;
 
         public MaquinaDeEstados()
         {
@@ -26,7 +27,7 @@ namespace GJN3_Diseño
             miniJuego2 = new Minijuego2();
             KongJuego = new KongGame();
 
-            estado = EstadoDeJuego.Minijuego1;
+            estado = EstadoDeJuego.Minijuego3;
         }
 
         public void Iniciar()
@@ -37,6 +38,15 @@ namespace GJN3_Diseño
             {
                 switch (estado)
                 {
+                    case EstadoDeJuego.MenuPrincipal:
+                        Transiciones.MenuPrincipal(ref esc);
+                        if (!esc)
+                        {
+                            estado = EstadoDeJuego.terminado;
+                        }
+                        Transiciones.Mensaje1();
+                        estado = EstadoDeJuego.Minijuego1;
+                        break;
                     case EstadoDeJuego.Minijuego1:
                         miniJuego1.Iniciar();
                         miniJuego1.Actualizar();
@@ -61,16 +71,15 @@ namespace GJN3_Diseño
                         break;
                 }
 
-                Final();
             }
+            Final();
         }
         private void Final()
         {
-            EstadoDeJuego estadoAnt;
-            if (estado != 0)
-                estadoAnt = estado - 1;
-            else estadoAnt = estado;
-            Escritor.EscribirDer("Juego: " + estadoAnt +" - Finalizado.");
+            if (vicAcumuladas >= 2)
+                Transiciones.FinalBueno();
+            else
+                Transiciones.FinalMalo();
         }
     }
 }

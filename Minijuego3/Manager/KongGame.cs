@@ -1,5 +1,6 @@
 ﻿using Minijuegos.Minijuego3;
 using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Threading;
 using Utilidades;
@@ -37,11 +38,12 @@ namespace Minijuegos
                 new Bala(4,9,2)
             };
         }
-        #region Métodos Interfaz
+        #region Métodos GameLoop
         public void Iniciar()
         {
             // Inicializa y controla el estado del minijuego
             Escritor.Escribir("MiniJuego Kong - ejecutándose", 0, 0);
+            Tutorial();
             Actualizar();
         }
         private void Reiniciar()
@@ -100,10 +102,12 @@ namespace Minijuegos
             // Se ejecuta una vez finalizado el minijuego para realizar una transición
             if (victoria)
             {
+                AnimarVictoria();
                 return 1;
             }
             else
             {
+                AnimarDerrota();
                 return 0;
             }
         }
@@ -196,6 +200,84 @@ namespace Minijuegos
 
             return false;
         }
+        private void AnimarVictoria()
+        {
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.SetCursorPosition(5, 6);
+            Console.Write("      X");
+            Thread.Sleep(500);
+            Console.SetCursorPosition(5, 7);
+            Console.Write("     X X");
+            Thread.Sleep(500);
+            Console.SetCursorPosition(5, 8);
+            Console.Write("XX   XX");
+            Thread.Sleep(500);
+            Console.SetCursorPosition(5, 9);
+            Console.Write("  XXX XX");
+            Thread.Sleep(500);
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+        private void AnimarDerrota()
+        {
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.SetCursorPosition(jugador.posicion.X,jugador.posicion.Y);
+            Console.Write("XXX");
+            Thread.Sleep(500);
+            Console.SetCursorPosition(jugador.posicion.X, jugador.posicion.Y+1);
+            Console.Write(" X ");
+            Thread.Sleep(500);
+            Console.SetCursorPosition(jugador.posicion.X, jugador.posicion.Y+2);
+            Console.Write("X X");
+            Thread.Sleep(500);
+            Console.ForegroundColor = ConsoleColor.White;
+        }
+
         #endregion
+
+        private void Tutorial()
+        {
+
+            Console.Clear();
+            Ventana.DibujarMarco();
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            string s1 = "Este es el último desafío, acá se decide todo...";
+            string s2 = "Las reglas son fáciles, te mueves con las flechas del teclado:";
+            string s3 = "Mover izquierda: <- | Mover derecha: -> | Saltar: ^ (flecha arriba)";
+            string s4 = "Si alcanzas a mi versión inferior ganas, si mueres 3 veces pierdes...";
+            string vacia = "";
+
+            List<string> texto = new List<string> { s1,vacia, s2, vacia, s3, vacia, s4 };
+            Escritor.EscribirLista(texto, 157 / 2 - s1.Length / 2, Console.WindowHeight / 2 - texto.Count);
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.CursorVisible = true;
+            Console.ReadKey();
+            Console.CursorVisible = false;
+            Console.Clear();
+            Ventana.DibujarMarco();
+
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Escritor.Escribir("Este eres tú:", 10,7);
+            Jugador jugador_temp = new Jugador(25, 7);
+            jugador_temp.Dibujar();
+
+            Escritor.Escribir("Este soy yo:", 40,7);
+            Console.ForegroundColor = ConsoleColor.DarkRed;
+            Console.SetCursorPosition(55, 7);
+            Console.Write("      _");
+            Console.SetCursorPosition(55, 8);
+            Console.Write("     c .");
+            Console.SetCursorPosition(55, 9);
+            Console.Write("\\_   /\\");
+            Console.SetCursorPosition(55, 10);
+            Console.Write("  \\_| ||");
+
+            Escritor.Escribir("Esquiva esto:", 85,7);
+            Bala bala_temp = new Bala(100, 7,0);
+            bala_temp.Dibujar();
+
+            Escritor.EscribirTitulo("¿Estás listo?");
+            Console.ReadKey();
+            Console.ForegroundColor = ConsoleColor.White;
+        }
     }
 }

@@ -91,6 +91,7 @@ namespace Minijuegos.Minijuego3
             else if (posicion.Y < 5)
                 posicion.Y = 5;
         }
+        #region Colisiones
         public void ColisionPiso(Plataforma plataforma) //Funciona bien
         {
             if (posicion.Y <= plataforma.GetTop() && posicion.Y + Alto >= plataforma.GetTop()
@@ -117,5 +118,6 @@ namespace Minijuegos.Minijuego3
             else
                 return false;
         }
+        #endregion
     }
 }
