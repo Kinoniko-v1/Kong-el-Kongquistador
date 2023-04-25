@@ -67,15 +67,10 @@ namespace Utilidades
 
         public static void AhorcadoInicial(String randomPalabra, int numeroIntentos)
         {
-            EscribeAhorcado("");
-            EscribeAhorcado("Que comience el juego!");
-            EscribeAhorcado("");
-
-            EscribeAhorcado("");
-            EscribeAhorcado("Ya elegí una palabra, de " + randomPalabra.Length + " letras");
-            EscribeAhorcado("");
+            Escribir("Que comience el juego!", 5, 2, true);
+            Escribir($"Ya elegí una palabra, de {randomPalabra.Length} letras", 12, 6, true);
+            Escribir($"Tenés {numeroIntentos} intentos", 12, 7, true);
             //Escritor.EscribirIzq("La palabra es " + randomPalabra);
-            EscribeAhorcado("Tenés " + numeroIntentos + " intentos");
         }
         public static void EscribeAhorcado(String texto)
         {
@@ -104,16 +99,16 @@ namespace Utilidades
                     palabra += "_";
                 }
             }
-            EscribeAhorcado(palabra);
+            Escribir(palabra, 12, 17, true);
         }
 
         public static void EscribirLetrasUsadas(List<string> letrasUsadas)
         {
-            EscribeAhorcado("Letras usadas: ");
-            EscribeAhorcado("");
+            int pos = 24;
+            Escribir("Letras usadas: ", 12, 23, true);
             foreach (string l in letrasUsadas)
             {
-                EscribeAhorcado(l + " ");
+                Escribir($"{l}", 12, pos+1, true);
             }
         }
 
@@ -122,67 +117,67 @@ namespace Utilidades
             switch (PartesCuerpo)
             {
                 case 0:
-                    EscribeAhorcado(" _____   ");
-                    EscribeAhorcado("|     |  ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("=========");
+                    Escribir(" _____   ", 12, 10, true);
+                    Escribir("|     |  ", 12, 11, true);
+                    Escribir("|        ", 12, 12, true);
+                    Escribir("|        ", 12, 13, true);
+                    Escribir("|        ", 12, 14, true);
+                    Escribir("|        ", 12, 15, true);
+                    Escribir("=========", 12, 16, true);
                     break;
                 case 1:
-                    EscribeAhorcado(" _____   ");
-                    EscribeAhorcado("|     |  ");
-                    EscribeAhorcado("|     O  ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("=========");
+                    Escribir(" _____   ", 12, 10, true);
+                    Escribir("|     |  ", 12, 11, true);
+                    Escribir("|     O  ", 12, 12, true);
+                    Escribir("|        ", 12, 13, true);
+                    Escribir("|        ", 12, 14, true);
+                    Escribir("|        ", 12, 15, true);
+                    Escribir("=========", 12, 16, true);
                     break;
                 case 2:
-                    EscribeAhorcado(" _____   ");
-                    EscribeAhorcado("|     |  ");
-                    EscribeAhorcado("|     O  ");
-                    EscribeAhorcado("|     |  ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("=========");
+                    Escribir(" _____   ", 12, 10, true);
+                    Escribir("|     |  ", 12, 11, true);
+                    Escribir("|     O  ", 12, 12, true);
+                    Escribir("|     |  ", 12, 13, true);
+                    Escribir("|        ", 12, 14, true);
+                    Escribir("|        ", 12, 15, true);
+                    Escribir("=========", 12, 16, true);
                     break;
                 case 3:
-                    EscribeAhorcado(" _____   ");
-                    EscribeAhorcado("|     |  ");
-                    EscribeAhorcado("|     O  ");
-                    EscribeAhorcado("|    /|  ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("=========");
+                    Escribir(" _____   ", 12, 10, true);
+                    Escribir("|     |  ", 12, 11, true);
+                    Escribir("|     O  ", 12, 12, true);
+                    Escribir("|    /|  ", 12, 13, true);
+                    Escribir("|        ", 12, 14, true);
+                    Escribir("|        ", 12, 15, true);
+                    Escribir("=========", 12, 16, true);
                     break;
                 case 4:
-                    EscribeAhorcado(" _____   ");
-                    EscribeAhorcado("|     |  ");
-                    EscribeAhorcado("|     O  ");
-                    EscribeAhorcado("|    /|\\ ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("=========");
+                    Escribir(" _____   ", 12, 10, true);
+                    Escribir("|     |  ", 12, 11, true);
+                    Escribir("|     O  ", 12, 12, true);
+                    Escribir("|    /|\\ ", 12, 13, true);
+                    Escribir("|        ", 12, 14, true);
+                    Escribir("|        ", 12, 15, true);
+                    Escribir("=========", 12, 16, true);
                     break;
                 case 5:
-                    EscribeAhorcado(" _____   ");
-                    EscribeAhorcado("|     |  ");
-                    EscribeAhorcado("|     O  ");
-                    EscribeAhorcado("|    /|\\ ");
-                    EscribeAhorcado("|    /   ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("=========");
+                    Escribir(" _____   ", 12, 10, true);
+                    Escribir("|     |  ", 12, 11, true);
+                    Escribir("|     O  ", 12, 12, true);
+                    Escribir("|    /|\\ ", 12, 13, true);
+                    Escribir("|    /   ", 12, 14, true);
+                    Escribir("|        ", 12, 15, true);
+                    Escribir("=========", 12, 16, true);
                     break;
                 case 6:
-                    EscribeAhorcado(" _____   ");
-                    EscribeAhorcado("|     |  ");
-                    EscribeAhorcado("|     O  ");
-                    EscribeAhorcado("|    /|\\ ");
-                    EscribeAhorcado("|    / \\ ");
-                    EscribeAhorcado("|        ");
-                    EscribeAhorcado("=========");
+                    Escribir(" _____   ", 12, 10, true);
+                    Escribir("|     |  ", 12, 11, true);
+                    Escribir("|     O  ", 12, 12, true);
+                    Escribir("|    /|\\ ", 12, 13, true);
+                    Escribir("|    / \\ ", 12, 14, true);
+                    Escribir("|        ", 12, 15, true);
+                    Escribir("=========", 12, 16, true);
                     break;
             }
         }

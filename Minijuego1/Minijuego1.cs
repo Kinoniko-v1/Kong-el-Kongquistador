@@ -57,11 +57,12 @@ namespace Minijuegos
         {
             while (numeroIntentos > 0 && ganaste == false)
             {
-                Escritor.EscribeAhorcado("");
-                Escritor.EscribeAhorcado("¿Qué letra elegís?");
                 Ventana.DibujarMarco();
+
+                Escritor.EscribeAhorcado("");
+                Escritor.Escribir("¿Qué letra elegís?", 12, 19, true);
+                Escritor.Escribir("", 12, 20, true);
                 Console.CursorVisible = true;
-                Console.SetCursorPosition(4, 16);
                 String letraElegida = Console.ReadLine().ToLower();
                 Console.CursorVisible = false;
 
@@ -71,21 +72,23 @@ namespace Minijuegos
                     if (randomPalabra.Contains(letraElegida))
                     {
                         letrasAdivinadas[randomPalabra.IndexOf(letraElegida)] = letraElegida;
-                        Escritor.EscribeAhorcado("Acertaste la letra");
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Escritor.Escribir("Acertaste la letra", 12, 21, true);
+                        Console.ForegroundColor = ConsoleColor.Gray;
+
                     }
                     else
                     {
                         partesCuerpo++;
                         numeroIntentos--;
-                        Escritor.EscribeAhorcado("Esa letra no está");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Escritor.Escribir("Esa letra no está", 12, 21, true);
+                        Console.ForegroundColor = ConsoleColor.Gray;
                     }
 
                     Escritor.DibujarAhorcado(partesCuerpo);
-                    Escritor.EscribeAhorcado("");
                     Escritor.MostrarPalabraAdivinar(randomPalabra, letrasAdivinadas);
-                    Escritor.EscribeAhorcado("");
-                    Escritor.EscribeAhorcado("Tenés " + numeroIntentos + " intentos");
-                    Escritor.EscribeAhorcado("");
+                    Escritor.Escribir($"Tenés {numeroIntentos} intentos", 12, 7, true);
                     letrasUsadas.Add(letraElegida);
 
                     Escritor.EscribirLetrasUsadas(letrasUsadas);
@@ -117,19 +120,18 @@ namespace Minijuegos
                 {
                     if (letraElegida.Length != 1)
                     {
-                        Escritor.EscribeAhorcado("Ingresaste más de una letra");
+                        Escritor.Escribir("Ingresaste más de una letra", 12, 21, true);
                     }
                     else if (letrasUsadas.Contains(letraElegida))
                     {
-                        Escritor.EscribeAhorcado("Ya elegiste esa letra");
+                        Escritor.Escribir("Ya elegiste esa letra", 12, 21, true);
                     }
                     else
                     {
-                        Escritor.EscribeAhorcado("Lo que tocaste no es una letra");
+                        Escritor.Escribir("Lo que tocaste no es una letra", 12, 21, true);
                     }
-                    Escritor.EscribeAhorcado("Por favor ingresá un caracter válido");
+                    Escritor.Escribir("Por favor ingresá un caracter válido", 12, 22, true);
                 }
-                Console.Clear();
             }
             if (ganaste == false)
             {
