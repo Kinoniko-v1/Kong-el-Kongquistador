@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.Xml.Linq;
 using System.Media;
-//using NAudio.Wave;
 using Utilidades;
 
 namespace Minijuegos
@@ -56,7 +55,6 @@ namespace Minijuegos
 
         public void Actualizar()
         {
-            //bool ganasteAhorcado = false;
             while (numeroIntentos > 0 && ganaste == false)
             {
                 Ventana.DibujarMarco();
@@ -74,19 +72,12 @@ namespace Minijuegos
                     {
                         letrasAdivinadas[randomPalabra.IndexOf(letraElegida)] = letraElegida;
                         Escritor.EscribeAhorcado("Acertaste la letra");
-                        //PLAY SOUND
-                        //var playerLetraSi = new SoundPlayer(@"Sonidos\jump.wav");
-                        //playerLetraSi.Play();
-
                     }
                     else
                     {
                         partesCuerpo++;
                         numeroIntentos--;
                         Escritor.EscribeAhorcado("Esa letra no está");
-                        //PLAY SOUND
-                        //var playerLetraNo = new SoundPlayer(@"Sonidos\explosion.wav");
-                        //playerLetraNo.Play();
                     }
 
                     Escritor.DibujarAhorcado(partesCuerpo);
@@ -116,14 +107,8 @@ namespace Minijuegos
 
                     if (palabra.ToString() == randomPalabra.ToString())
                     {
-                        //var player = new SoundPlayer(@"D:\Martin\CS\C#_QuarkAcademy\GameJam03\Sonidos\Laser_Shoot.wav");
-                        //var player = new SoundPlayer(@"D:\Martin\CS\C#_QuarkAcademy\GameJam03\00_AhorcadoMVP\Domain_AhorcadoMVP\Sonidos\Laser_Shoot.wav");
-                        //var playerGana = new SoundPlayer(@"Sonidos\recover.wav");
-                        //playerGana.Play();
-
                         numeroIntentos = 0;
                         ganaste = true;
-                        //ganasteAhorcado = true;
                         Finalizar();
                     }
 
@@ -147,18 +132,11 @@ namespace Minijuegos
             }
             if (ganaste == false)
             {
-                //PLAY SOUND
-                //var player = new SoundPlayer(@"D:\Martin\CS\C#_QuarkAcademy\GameJam03\Sonidos\evilLaugh.wav");
-                //var playerPierde = new SoundPlayer(@"Sonidos\evilLaugh.wav");
-                //playerPierde.Play();
                 Escritor.EscribeAhorcado("");
                 Escritor.EscribeAhorcado("Game over! La palabra era " + randomPalabra);
                 Escritor.EscribeAhorcado("Presioná cualquier tecla para jugar de nuevo");
                 Console.ReadKey();
                 Escritor.LimpiaPantalla();
-                //Volver a iniciar hasta que se gane?
-                //Iniciar();
-                //Actualizar();
                 Finalizar();
             }
         }
