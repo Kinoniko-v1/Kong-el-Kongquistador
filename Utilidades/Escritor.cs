@@ -52,7 +52,14 @@ namespace Utilidades
             int largo = texto.Length/2;
             Escribir(texto, Console.WindowWidth / 2 - largo, 1);
         }
-            
+        public static void EscribirLista(List<string> lista,int cordX, int cordY)
+        {
+            for (int i = 0; i < lista.Count; i++)
+            {
+                string s = lista[i];
+                Escribir(s, cordX, i + cordY);
+            }
+        }  
         public static void LimpiaPantalla()
         {
             Console.Clear();

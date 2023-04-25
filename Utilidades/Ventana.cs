@@ -13,6 +13,8 @@ namespace Utilidades
         // Setea las dimensiones de la Consola, a partir de estas proporciones se ejecutan los métodos de...
         // las clases Narrador y Ventana (esta misma).
         {
+            Console.Title = "C:/Users/Kong/Desktop/KongTheKongqueror.xd";
+
             if (Console.LargestWindowWidth < 250
                 && Console.LargestWindowHeight < 73) // 1920x1080 = 240x63 | 
             {

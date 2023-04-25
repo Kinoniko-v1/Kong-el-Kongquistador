@@ -1,16 +1,15 @@
 ﻿using Minijuegos.Minijuego3;
 using System;
-using System.Collections.Generic;
 using System.Drawing;
-using System.Text;
+using System.Threading;
 using Utilidades;
 
 namespace Minijuegos
 {
     public class KongGame : IMiniJuego
     {
-        private List<Plataforma> plataformas;
-        private List<Bala> balas;
+        private Plataforma[] plataformas;
+        private Bala[] balas;
         Jugador jugador;
 
         private int vidas = 3;
@@ -23,14 +22,14 @@ namespace Minijuegos
             objetivo.X = 12;
             objetivo.Y = 10;
             jugador = new Jugador(10, 31);
-            plataformas = new List<Plataforma>
+            plataformas = new Plataforma[]
             {
                 new Plataforma(4, 34, 145, 3),  // suelo
                 new Plataforma(10, 26, 125, 3),  // primer piso
                 new Plataforma(24, 18, 125, 3), // segundo piso
                 new Plataforma(4, 10, 125, 3)   // último piso
             };
-            balas = new List<Bala>
+            balas = new Bala[]
             {
                 new Bala(150,33,-2),
                 new Bala(4,25,2),
@@ -47,8 +46,10 @@ namespace Minijuegos
         }
         private void Reiniciar()
         {
+            
             jugador = new Jugador(10, 31);
             jugando = true;
+            Thread.Sleep(300);
             Actualizar();
         }
         public void Actualizar()
@@ -86,10 +87,10 @@ namespace Minijuegos
                 }
 
                 // Pausa el juego para mantener la velocidad
-                System.Threading.Thread.Sleep(25);
+                System.Threading.Thread.Sleep(35);
             }
 
-            if (vidas > 0)
+            if (vidas > 0 && !victoria)
                 Reiniciar();
             else if (vidas <= 0)
                 victoria = false;
