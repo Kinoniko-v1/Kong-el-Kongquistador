@@ -26,6 +26,10 @@ namespace Minijuegos
 
         public int Finalizar()
         {
+            Console.ForegroundColor= ConsoleColor.DarkRed;
+            if (valor == 1) Escritor.Escribir("¡Si no lo consigo en esta vida, alguna otra vida lo hará!", 52, 11);
+            if (valor == 0) Escritor.Escribir("Cada victoria es solo una piedra más en el camino hacia mi dominio final.", 38, 11);
+            Console.ForegroundColor = ConsoleColor.Gray;
             return valor;
         }
     }
