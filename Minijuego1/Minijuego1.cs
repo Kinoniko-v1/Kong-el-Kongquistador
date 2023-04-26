@@ -141,8 +141,8 @@ namespace Minijuegos
                 Ventana.DibujarMarco();
                 Escritor.Escribir($"Game over! La palabra era {randomPalabra}", 60, 11, true);
                 Escritor.Escribir("Presioná cualquier tecla para avanzar", 60, 12, true);
-                Console.ReadKey();
-                Escritor.LimpiaPantalla();
+                //Console.ReadKey();
+                //Escritor.LimpiaPantalla();
                 Finalizar();
             }
         }
@@ -154,8 +154,8 @@ namespace Minijuegos
                 Ventana.DibujarMarco();
                 Escritor.Escribir("ME GANASTE!", 66, 11, true);
                 Escritor.Escribir("Presioná cualquier tecla para avanzar", 60, 12, true);
-                Console.ReadKey();
-                Escritor.LimpiaPantalla();
+                //Console.ReadKey();
+                //Escritor.LimpiaPantalla();
                 //Escritor.EscribirIzq("Minijuego1 finalizado, pasando a Minijuego2");
                 return 1;
             }
