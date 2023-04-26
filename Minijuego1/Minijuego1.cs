@@ -4,6 +4,7 @@ using System.Text;
 using System.Xml.Linq;
 using System.Media;
 using Utilidades;
+using System.Drawing.Printing;
 
 namespace Minijuegos
 {
@@ -118,6 +119,7 @@ namespace Minijuegos
                 }
                 else
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     if (letraElegida.Length != 1)
                     {
                         Escritor.Escribir("Ingresaste más de una letra", 12, 21, true);
@@ -131,13 +133,14 @@ namespace Minijuegos
                         Escritor.Escribir("Lo que tocaste no es una letra", 12, 21, true);
                     }
                     Escritor.Escribir("Por favor ingresá un caracter válido", 12, 22, true);
+                    Console.ForegroundColor = ConsoleColor.Gray;
                 }
             }
             if (ganaste == false)
             {
-                Escritor.EscribeAhorcado("");
-                Escritor.EscribeAhorcado("Game over! La palabra era " + randomPalabra);
-                Escritor.EscribeAhorcado("Presioná cualquier tecla para jugar de nuevo");
+                Ventana.DibujarMarco();
+                Escritor.Escribir($"Game over! La palabra era {randomPalabra}", 60, 11, true);
+                Escritor.Escribir("Presioná cualquier tecla para avanzar", 60, 12, true);
                 Console.ReadKey();
                 Escritor.LimpiaPantalla();
                 Finalizar();
@@ -148,9 +151,9 @@ namespace Minijuegos
         {
             if (ganaste)
             {
-                Escritor.EscribeAhorcado("");
-                Escritor.EscribeAhorcado("ME GANASTE!");
-                Escritor.EscribeAhorcado("Presioná cualquier tecla para avanzar");
+                Ventana.DibujarMarco();
+                Escritor.Escribir("ME GANASTE!", 66, 11, true);
+                Escritor.Escribir("Presioná cualquier tecla para avanzar", 60, 12, true);
                 Console.ReadKey();
                 Escritor.LimpiaPantalla();
                 //Escritor.EscribirIzq("Minijuego1 finalizado, pasando a Minijuego2");
