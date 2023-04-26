@@ -51,7 +51,7 @@ namespace JuegoRetro
                 tecla = Console.ReadKey();
                 MoverJugador(tecla.Key, ref mapaActual);
                 MoverEnemigo(ref mapaActual);
-            } while (tecla.Key != ConsoleKey.Escape);
+            } while (vidas > 0);
 
             if (gano)
             {
