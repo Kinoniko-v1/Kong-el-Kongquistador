@@ -104,11 +104,12 @@ namespace Utilidades
 
         public static void EscribirLetrasUsadas(List<string> letrasUsadas)
         {
-            int pos = 24;
+            int posX = 0;
             Escribir("Letras usadas: ", 12, 23, true);
             foreach (string l in letrasUsadas)
             {
-                Escribir($"{l}", 12, pos+1, true);
+                Escribir($"{l}", 12 + posX, 24, true);
+                posX++;
             }
         }
 
