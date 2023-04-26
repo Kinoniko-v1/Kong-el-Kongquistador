@@ -13,6 +13,9 @@ namespace Utilidades
             int posY = Console.WindowHeight / 2;
             Console.Clear();
             Ventana.DibujarMarco();
+            Escritor.EscribirTitulo("Hello World! - Abrid paso a Kong El Kongquistador\n");
+
+            Escritor.EscribirIzq("(No presionar teclas mientras se escriben los textos. Provoca un salto inesperado)");
             do
             {
                 Escritor.Escribir(jugar, posX - jugar.Length/2,posY, true);
@@ -23,10 +26,14 @@ namespace Utilidades
                 {
                     ConsoleKeyInfo key = Console.ReadKey(true);
                     if (key.Key == ConsoleKey.Enter)
-                        opcion = true;
-                    else if (key.Key == ConsoleKey.Escape)
                     {
                         esc = true;
+                        opcion = true;
+                    }
+                    else if (key.Key == ConsoleKey.Escape)
+                    {
+                        Console.Clear();
+                        Environment.Exit(0);
                     }
                     else
                         opcion = false;
@@ -64,7 +71,15 @@ namespace Utilidades
             Escritor.EscribirTitulo(f_texto1);
             Console.ForegroundColor = ConsoleColor.White;
 
-            string s1 = "";
+            string s1 = "Al parecer lograste derrotar a nada más ni nada menos que a";
+            string s2 = "Kong el Kongquistador, un ser intertemporal. Pero no era él en verdad.";
+            string s3 = "O acaso creíste que alguien tan poderoso iba a ser tan fácil de derrotar";
+            string s4 = "Su plan no termina aún, le ganaste a una aplicación de Consola ¡Felicidades!";
+            string s5 = "Por cierto, era una versión de bajo presupesto evidentemente...";
+            string vacia = "";
+
+            List<string> texto = new List<string> { s1, s2, s3, vacia, s4, vacia, s5 };
+            Escritor.EscribirLista(texto, 157 / 2 - s1.Length / 2, Console.WindowHeight / 2 - texto.Count);
 
         }
         static public void FinalMalo() 

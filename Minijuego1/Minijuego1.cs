@@ -29,12 +29,13 @@ namespace Minijuegos
         
         public Minijuego1()
         {
-            Escritor.EscribirIzq("Minijuego Uno - Objeto creado");
+            //Escritor.EscribirIzq("Minijuego Uno - Objeto creado");
         }
         public void Iniciar()
         {
-            Escritor.Escribir("MiniJuego Uno - ejecutándose", 0, 0);
-            Escritor.EscribirIzq("Desafío Ahorcado: adiviná el nombre del juego retro");
+            //Escritor.Escribir("MiniJuego Uno - ejecutándose", 0, 0);
+            Escritor.EscribirTitulo("Desafío Ahorcado: adiviná el nombre del juego retro");
+            Console.ReadKey();
 
             //inicializa variables
             randomNumero = random.Next(palabras.Length);
@@ -139,11 +140,12 @@ namespace Minijuegos
             if (ganaste == false)
             {
                 Ventana.DibujarMarco();
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Escritor.Escribir($"Game over! La palabra era {randomPalabra}", 60, 11, true);
                 Escritor.Escribir("Cada victoria es solo una piedra más en el camino hacia mi dominio final", 60, 12, true);
+                Console.ForegroundColor = ConsoleColor.White;
                 Escritor.Escribir("Presioná cualquier tecla", 60, 13, true);
-                //Console.ReadKey();
-                //Escritor.LimpiaPantalla();
+                Console.ReadKey();
                 Finalizar();
             }
         }
@@ -152,13 +154,14 @@ namespace Minijuegos
         {
             if (ganaste)
             {
+                Console.Clear();
                 Ventana.DibujarMarco();
                 Escritor.Escribir("ME GANASTE!", 60, 11, true);
+                Console.ForegroundColor = ConsoleColor.DarkRed;
                 Escritor.Escribir("¿Que cómo llevaré a cabo mi plan...? Supongo que chat GPT me ayudará. Pero no es momento para eso aún...", 60, 12, true);
+                Console.ForegroundColor = ConsoleColor.White;
                 Escritor.Escribir("Presioná cualquier tecla", 60, 13, true);
-                //Console.ReadKey();
-                //Escritor.LimpiaPantalla();
-                //Escritor.EscribirIzq("Minijuego1 finalizado, pasando a Minijuego2");
+                Console.ReadKey();
                 return 1;
             }
             else

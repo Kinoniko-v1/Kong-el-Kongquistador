@@ -21,13 +21,13 @@ namespace GJN3_Diseño
 
         public MaquinaDeEstados()
         {
-            Escritor.EscribirIzq("Máquina creada");
+            //Escritor.EscribirIzq("Máquina creada");
 
             miniJuego1 = new Minijuego1();
             miniJuego2 = new Minijuego2();
             KongJuego = new KongGame();
 
-            estado = EstadoDeJuego.Minijuego3;
+            estado = EstadoDeJuego.MenuPrincipal;
         }
 
         public void Iniciar()
@@ -44,8 +44,11 @@ namespace GJN3_Diseño
                         {
                             estado = EstadoDeJuego.terminado;
                         }
-                        Transiciones.Mensaje1();
-                        estado = EstadoDeJuego.Minijuego1;
+                        else
+                        {
+                            Transiciones.Mensaje1();
+                            estado = EstadoDeJuego.Minijuego1;
+                        }
                         break;
                     case EstadoDeJuego.Minijuego1:
                         miniJuego1.Iniciar();
