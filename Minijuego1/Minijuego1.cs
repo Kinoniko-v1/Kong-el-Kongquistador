@@ -140,7 +140,8 @@ namespace Minijuegos
             {
                 Ventana.DibujarMarco();
                 Escritor.Escribir($"Game over! La palabra era {randomPalabra}", 60, 11, true);
-                Escritor.Escribir("Presioná cualquier tecla para avanzar", 60, 12, true);
+                Escritor.Escribir("Cada victoria es solo una piedra más en el camino hacia mi dominio final", 60, 12, true);
+                Escritor.Escribir("Presioná cualquier tecla", 60, 13, true);
                 //Console.ReadKey();
                 //Escritor.LimpiaPantalla();
                 Finalizar();
@@ -152,8 +153,9 @@ namespace Minijuegos
             if (ganaste)
             {
                 Ventana.DibujarMarco();
-                Escritor.Escribir("ME GANASTE!", 66, 11, true);
-                Escritor.Escribir("Presioná cualquier tecla para avanzar", 60, 12, true);
+                Escritor.Escribir("ME GANASTE!", 60, 11, true);
+                Escritor.Escribir("¿Que cómo llevaré a cabo mi plan...? Supongo que chat GPT me ayudará. Pero no es momento para eso aún...", 60, 12, true);
+                Escritor.Escribir("Presioná cualquier tecla", 60, 13, true);
                 //Console.ReadKey();
                 //Escritor.LimpiaPantalla();
                 //Escritor.EscribirIzq("Minijuego1 finalizado, pasando a Minijuego2");
